@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Magic City Savers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+
+    /* NAV BAR */
+    nav {
+      background: #145a95;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    nav a:hover {
+      opacity: 0.85;
+    }
+
+    header {
+      background: #1769aa;
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .content h2 {
+      font-size: 1.6rem;
+      margin-top: 1.5rem;
+      color: #1769aa;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 2rem auto;
+      text-align: center;
+      padding: 0.75rem 1.5rem;
+      background: #1769aa;
+      color: white;
+      border-radius: 6px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .content h2 {
+        font-size: 1.35rem;
+      }
+
+      .content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#survey">Survey</a>
+    <a href="about.html" class="active">About</a>
+  </nav>
+
+  <header>
+    <h1>About Magic City Savers</h1>
+  </header>
+
+  <main class="content">
+
+    <h2>What We're Building</h2>
+    <p>
+      Magic City Savers is a hyper-local grocery savings club built for Birmingham neighborhoods.
+      Our goal is simple: make it easy for shoppers to compare prices across nearby stores — like Aldi,
+      Publix, Walmart, Piggly Wiggly, and more — so everyone can save money every week.
+    </p>
+
+    <p>
+      We're building tools that scrape and analyze grocery prices across multiple stores, letting you
+      build a shopping list and see which store has the best deals in real time.
+    </p>
+
+    <h2>Why This Matters</h2>
+    <p>
+      Grocery prices have climbed year after year, and shoppers often have no visibility into which
+      store is truly cheapest for their weekly list. Many families in our area are spending far more
+      than they need to — simply because the information is hard to find.
+    </p>
+
+    <p>
+      By gathering price data, listening to local shoppers, and focusing on a few neighborhoods at a
+      time, we aim to create a tool that delivers real savings, week after week.
+    </p>
+
+    <div style="text-align:center; margin-bottom: 2rem;">
+      <a href="index.html" class="back-btn">← Back to Survey</a>
+    </div>
+
+  </main>
+
+</body>
+</html>
