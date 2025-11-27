@@ -73,6 +73,29 @@
       }
     }
   </style>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVHLR5F81"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VPVHLR5F81');
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const survey = document.getElementById("survey");
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting === true) {
+      gtag('event', 'survey_viewed');
+    }
+  }, { threshold: 0.3 });
+
+  observer.observe(survey);
+});
+</script>
+  
 </head>
 <body>
 
