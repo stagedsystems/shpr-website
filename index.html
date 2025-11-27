@@ -106,8 +106,11 @@ document.addEventListener("DOMContentLoaded", function() {
   </header>
 
   <section id="survey" class="survey-section">
-    <!-- Replace the src with your actual Airtable embed URL -->
+    <div id="loader" style="text-align:center; padding:2rem;">
+      Loading survey...
+    </div>
     <iframe 
+      onload="document.getElementById('loader').style.display='none';"
       class="airtable-embed" 
       src="https://airtable.com/embed/appGYpTdQ1sWQwvrM/pag0aaPn2yeUsa8v5/form" 
       frameborder="0"
