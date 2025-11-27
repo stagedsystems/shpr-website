@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic City Savers – Grocery Savings Survey</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #fafafa;
+      line-height: 1.5;
+    }
+
+    header {
+      background: #1769aa;
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: #1769aa;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .cta-btn:hover {
+      opacity: 0.85;
+    }
+
+    .survey-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 900px;
+      border: none;
+      border-radius: 8px;
+      background: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      iframe {
+        height: 1100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Help Birmingham Save on Groceries</h1>
+    <p>Take our 3-minute survey and help us build a local grocery savings club.</p>
+    <a href="#survey" class="cta-btn">Start the Survey</a>
+  </header>
+
+  <section id="survey" class="survey-section">
+    <!-- Replace the src with your actual Airtable embed URL -->
+    <iframe 
+      class="airtable-embed" 
+      src="https://airtable.com/embed/appGYpTdQ1sWQwvrM/pag0aaPn2yeUsa8v5/form" 
+      frameborder="0"
+      onmousewheel=""
+      width="100%">
+    </iframe>
+  </section>
+
+</body>
+</html>
