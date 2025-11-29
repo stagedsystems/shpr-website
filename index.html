@@ -51,12 +51,11 @@
       padding: 0 1rem;
     }
 
-    .survey-intro {
-      background: white;
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-      line-height: 1.5;
+    .note {
+      text-align: center;
+      color: #444;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
     }
 
     .typeform-container {
@@ -97,57 +96,63 @@
   });
   </script>
 
-  <!-- Typeform embed script -->
-  <script src="https://embed.typeform.com/next/embed.js"></script>
-
 </head>
 <body>
 
   <header>
     <h1>Help Birmingham Save on Groceries</h1>
     <p>Take our quick 2-minute survey and enter to win a $100 Amazon gift card.</p>
-    <!-- ⬇️ Button now scrolls directly to the form area, not just the top of the section -->
+    <!-- Scrolls directly to the form area -->
     <a href="#survey-start" class="cta-btn">Start the Survey</a>
   </header>
 
   <section id="survey" class="survey-section">
-    <div class="survey-intro">
-      <p><strong>You would be doing us a huge favor</strong> by answering a few quick questions about how you shop for groceries in Birmingham.</p>
-
-      <p>Share your email to be entered in a raffle for a <strong>$100 Amazon card</strong>. If you’re open to a brief follow-up phone interview, we’ll also send a <strong>$5 Starbucks gift card</strong>.</p>
-
-      <p>This is a local effort and <strong>your information will not be sold or shared</strong>; it’s only used for Birmingham grocery market research.</p>
-
-      <p>Thank you so much for your help!</p>
+    
+    <!-- Small optional note above survey -->
+    <div class="note">
+      Scroll down to begin the survey.
     </div>
 
-    <!-- ⬇️ New anchor: header button jumps here, right above the loader + form -->
+    <!-- Scroll anchor for the button -->
     <div id="survey-start"></div>
 
     <!-- Loader -->
     <div id="loader">Loading survey...</div>
 
-    <!-- Wrapper starts invisible -->
+    <!-- Typeform wrapper -->
     <div id="typeform-wrapper" style="opacity:0; transition: opacity 0.4s;">
-      <div class="typeform-container" data-tf-live="01KB7WHENVVCTKQRY33N7MZGGV"></div>
+      <div id="typeform-container" class="typeform-container"></div>
     </div>
 
   </section>
 
-  <!-- Detect Typeform form-ready event -->
+
+  <!-- Typeform embed initialization -->
   <script>
   document.addEventListener("DOMContentLoaded", function () {
+
+    // Load embed script dynamically
+    var s = document.createElement("script");
+    s.src = "https://embed.typeform.com/next/embed.js";
+    s.onload = function () {
+      // Initialize widget
+      window.tf.createWidget("01KB7WHENVVCTKQRY33N7MZGGV", {
+        container: document.getElementById("typeform-container")
+      });
+    };
+    document.body.appendChild(s);
+
+    // Wait for the form-ready message
     window.addEventListener("message", function (event) {
       if (event.data.type === "form-ready") {
-        // Hide loader
         var loader = document.getElementById("loader");
         if (loader) loader.style.display = "none";
 
-        // Show Typeform smoothly
         var wrapper = document.getElementById("typeform-wrapper");
         if (wrapper) wrapper.style.opacity = "1";
       }
     });
+
   });
   </script>
 
