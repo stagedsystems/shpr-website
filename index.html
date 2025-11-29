@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Magic City Savers – Grocery Savings Survey</title>
-
   <style>
     body {
       margin: 0;
@@ -33,13 +32,13 @@
 
     .cta-btn {
       display: inline-block;
-      padding: 0.9rem 2rem;
+      padding: 0.75rem 1.5rem;
       background: white;
       color: #1769aa;
       border-radius: 6px;
       font-weight: bold;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     .cta-btn:hover {
@@ -74,6 +73,7 @@
     }
   </style>
 
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVHLR5F81"></script>
   <script>
@@ -97,72 +97,57 @@
   });
   </script>
 
+  <!-- Typeform embed script -->
+  <script src="https://embed.typeform.com/next/embed.js"></script>
+
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <h1>Help Birmingham Save on Groceries</h1>
-    <p>Take our quick 3-minute survey and enter to win a $100 Amazon gift card.</p>
+    <p>Take our quick 2-minute survey and enter to win a $100 Amazon gift card.</p>
+    <!-- ⬇️ Button now scrolls directly to the form area, not just the top of the section -->
+    <a href="#survey-start" class="cta-btn">Start the Survey</a>
   </header>
 
-
-  <!-- SURVEY SECTION -->
   <section id="survey" class="survey-section">
-
-    <!-- INTRO BLOCK -->
     <div class="survey-intro">
-      <p><strong>You would be doing us a huge favor</strong> to answer a few questions so we can understand how people shop for groceries in Birmingham.</p>
+      <p><strong>You would be doing us a huge favor</strong> by answering a few quick questions about how you shop for groceries in Birmingham.</p>
 
-      <p>If you provide your email, you will be entered in a raffle for a <strong>$100 Amazon card</strong>. If you are open to a follow-up phone interview, we'll give you a <strong>$5 Starbucks gift card</strong>.</p>
+      <p>Share your email to be entered in a raffle for a <strong>$100 Amazon card</strong>. If you’re open to a brief follow-up phone interview, we’ll also send a <strong>$5 Starbucks gift card</strong>.</p>
 
-      <p>This is a local effort and <strong>your information will not be sold or shared</strong>; this is purely for local market research.</p>
+      <p>This is a local effort and <strong>your information will not be sold or shared</strong>; it’s only used for Birmingham grocery market research.</p>
 
-      <p>Thanks so much!!</p>
+      <p>Thank you so much for your help!</p>
     </div>
 
-    <!-- START BUTTON BELOW INTRO -->
-    <div style="text-align:center; margin-bottom:2rem;">
-      <a href="#form-start" class="cta-btn">Start the 2-Minute Survey</a>
-    </div>
+    <!-- ⬇️ New anchor: header button jumps here, right above the loader + form -->
+    <div id="survey-start"></div>
 
-    <!-- SCROLL TARGET (BELOW INTRO) -->
-    <div id="form-start"></div>
-
-    <!-- LOADER -->
+    <!-- Loader -->
     <div id="loader">Loading survey...</div>
 
-    <!-- TYPEFORM WRAPPER -->
+    <!-- Wrapper starts invisible -->
     <div id="typeform-wrapper" style="opacity:0; transition: opacity 0.4s;">
-      <div id="typeform-container" class="typeform-container"></div>
+      <div class="typeform-container" data-tf-live="01KB7WHENVVCTKQRY33N7MZGGV"></div>
     </div>
 
   </section>
 
-
-  <!-- Typeform Embed Initialization -->
+  <!-- Detect Typeform form-ready event -->
   <script>
   document.addEventListener("DOMContentLoaded", function () {
-
-    // Load embed script dynamically
-    var s = document.createElement("script");
-    s.src = "https://embed.typeform.com/next/embed.js";
-    s.onload = function () {
-      // Create widget when script is ready
-      window.tf.createWidget("01KB7WHENVVCTKQRY33N7MZGGV", {
-        container: document.getElementById("typeform-container")
-      });
-    };
-    document.body.appendChild(s);
-
-    // Wait for Typeform form-ready event
     window.addEventListener("message", function (event) {
       if (event.data.type === "form-ready") {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("typeform-wrapper").style.opacity = "1";
+        // Hide loader
+        var loader = document.getElementById("loader");
+        if (loader) loader.style.display = "none";
+
+        // Show Typeform smoothly
+        var wrapper = document.getElementById("typeform-wrapper");
+        if (wrapper) wrapper.style.opacity = "1";
       }
     });
-
   });
   </script>
 
