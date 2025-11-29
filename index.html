@@ -51,51 +51,47 @@
       padding: 0 1rem;
     }
 
-    iframe {
-      width: 100%;
-      height: 900px;
-      border: none;
-      border-radius: 8px;
+    .typeform-container {
+      min-height: 700px;
       background: white;
+      border-radius: 8px;
+      padding: 1rem;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      iframe {
-        height: 1100px;
-      }
+    #loader {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.2rem;
     }
   </style>
 
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVHLR5F81"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VPVHLR5F81');
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const survey = document.getElementById("survey");
-  const observer = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting === true) {
-      gtag('event', 'survey_viewed');
-    }
-  }, { threshold: 0.3 });
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVHLR5F81"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VPVHLR5F81');
+  </script>
 
-  observer.observe(survey);
-});
-</script>
-  
+  <!-- Fire event when survey section becomes visible -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const survey = document.getElementById("survey");
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting === true) {
+        gtag('event', 'survey_viewed');
+      }
+    }, { threshold: 0.3 });
+
+    observer.observe(survey);
+  });
+  </script>
+
+  <!-- Typeform embed script -->
+  <script src="https://embed.typeform.com/next/embed.js"></script>
+
 </head>
 <body>
 
@@ -106,18 +102,32 @@ document.addEventListener("DOMContentLoaded", function() {
   </header>
 
   <section id="survey" class="survey-section">
-    <div id="loader" style="text-align:center; padding:2rem;">
-      Loading survey...
+
+    <!-- Loader -->
+    <div id="loader">Loading survey...</div>
+
+    <!-- Wrapper starts invisible -->
+    <div id="typeform-wrapper" style="opacity:0; transition: opacity 0.4s;">
+      <div class="typeform-container" data-tf-live="xSQpqhcp"></div>
     </div>
-    <iframe 
-      onload="document.getElementById('loader').style.display='none';"
-      class="airtable-embed" 
-      src="https://airtable.com/embed/appGYpTdQ1sWQwvrM/pag0aaPn2yeUsa8v5/form" 
-      frameborder="0"
-      onmousewheel=""
-      width="100%">
-    </iframe>
+
   </section>
+
+
+  <!-- Detect Typeform form-ready event -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("message", function (event) {
+      if (event.data.type === "form-ready") {
+        // Hide loader
+        document.getElementById("loader").style.display = "none";
+
+        // Show Typeform smoothly
+        document.getElementById("typeform-wrapper").style.opacity = "1";
+      }
+    });
+  });
+  </script>
 
 </body>
 </html>
