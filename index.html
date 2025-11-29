@@ -16,55 +16,35 @@
     header {
       background: #1769aa;
       color: white;
-      padding: 3rem 1.5rem;
+      padding: 2.5rem 1.25rem;      /* slightly smaller */
       text-align: center;
     }
 
     header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.75rem;
+      font-size: 1.9rem;            /* slightly smaller */
+      margin-bottom: 0.5rem;
     }
 
-    header p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .cta-btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: white;
-      color: #1769aa;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-
-    .cta-btn:hover {
-      opacity: 0.85;
-    }
-
+    /* --- REDUCED SPACING VERSION --- */
     .survey-section {
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: 1rem auto;            /* was 2rem */
+      padding: 0;                   /* removed extra padding */
     }
 
     .typeform-container {
-      min-height: 700px;
+      min-height: 650px;            /* was 700px */
       background: white;
-      border-radius: 8px;
-      padding: 1rem;
+      border-radius: 4px;           /* smaller corners */
+      padding: 0;                   /* removed padding */
     }
 
     #loader {
       text-align: center;
-      padding: 2rem;
-      font-size: 1.2rem;
+      padding: 1.5rem;              /* slightly smaller */
+      font-size: 1.1rem;
     }
   </style>
-
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVHLR5F81"></script>
@@ -111,21 +91,10 @@
 
   </section>
 
-
   <!-- Detect Typeform form-ready event -->
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("message", function (event) {
       if (event.data.type === "form-ready") {
-        // Hide loader
         document.getElementById("loader").style.display = "none";
-
-        // Show Typeform smoothly
-        document.getElementById("typeform-wrapper").style.opacity = "1";
-      }
-    });
-  });
-  </script>
-
-</body>
-</html>
+        document.getElementById("typeform-wrapper").style.opaci
