@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Magic City Savers – Grocery Savings Survey</title>
-
   <style>
     body {
       margin: 0;
@@ -52,19 +51,11 @@
       padding: 0 1rem;
     }
 
-    .note {
-      text-align: center;
-      color: #444;
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-    }
-
-    iframe {
-      width: 100%;
-      height: 900px;
-      border: none;
-      border-radius: 8px;
+    .typeform-container {
+      min-height: 700px;
       background: white;
+      border-radius: 8px;
+      padding: 1rem;
     }
 
     #loader {
@@ -72,12 +63,8 @@
       padding: 2rem;
       font-size: 1.2rem;
     }
-
-    #iframe-wrapper {
-      opacity: 0;
-      transition: opacity 0.4s;
-    }
   </style>
+
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVHLR5F81"></script>
@@ -90,4 +77,57 @@
 
   <!-- Fire event when survey section becomes visible -->
   <script>
-  document.addEventListener("DOMContentLoaded", function()
+  document.addEventListener("DOMContentLoaded", function() {
+    const survey = document.getElementById("survey");
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting === true) {
+        gtag('event', 'survey_viewed');
+      }
+    }, { threshold: 0.3 });
+
+    observer.observe(survey);
+  });
+  </script>
+
+  <!-- Typeform embed script -->
+  <script src="https://embed.typeform.com/next/embed.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <h1>Help Birmingham Save on Groceries</h1>
+    <p>Take our 3-minute survey and help us build a local grocery savings club.</p>
+    <a href="#survey" class="cta-btn">Start the Survey</a>
+  </header>
+
+  <section id="survey" class="survey-section">
+
+    <!-- Loader -->
+    <div id="loader">Loading survey...</div>
+
+    <!-- Wrapper starts invisible -->
+    <div id="typeform-wrapper" style="opacity:0; transition: opacity 0.4s;">
+      <div class="typeform-container" data-tf-live="01KB7WHENVVCTKQRY33N7MZGGV"></div>
+    </div>
+
+  </section>
+
+
+  <!-- Detect Typeform form-ready event -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("message", function (event) {
+      if (event.data.type === "form-ready") {
+        // Hide loader
+        document.getElementById("loader").style.display = "none";
+
+        // Show Typeform smoothly
+        document.getElementById("typeform-wrapper").style.opacity = "1";
+      }
+    });
+  });
+  </script>
+
+</body>
+</html>
