@@ -415,6 +415,11 @@ body {
   line-height: 1.5;
 }
 
+/* ===== SCROLL OFFSET FOR STICKY HEADER ===== */
+#email-signup {
+  scroll-margin-top: 125px;
+}
+
 /* ===== HUBSPOT FORM STYLES ===== */
 .hbspt-form {
   margin: 1.5rem 0;
