@@ -1,2 +1,2 @@
 # shpr-website
-Front facing website for shopr survey, etc.
+Front facing website for Magic City Savers survey, etc.
