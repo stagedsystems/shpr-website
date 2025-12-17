@@ -220,9 +220,6 @@ body {
   background: var(--white);
   border-bottom: 1px solid var(--gray-200);
   padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .logo {
@@ -413,11 +410,6 @@ body {
   color: var(--gray-700);
   font-size: 0.9375rem;
   line-height: 1.5;
-}
-
-/* ===== SCROLL OFFSET FOR STICKY HEADER ===== */
-#email-signup {
-  scroll-margin-top: 125px;
 }
 
 /* ===== HUBSPOT FORM STYLES ===== */
