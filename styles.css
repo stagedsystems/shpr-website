@@ -343,3 +343,167 @@ body {
     padding: 2rem 1.5rem;
   }
 }
+
+/* Extra small devices (iPhone SE, older iPhones) */
+@media (max-width: 375px) {
+  .landing-card {
+    padding: 1rem 1rem;
+  }
+
+  .landing-card h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .landing-card h2 {
+    font-size: 1.125rem;
+  }
+
+  .landing-card .text-lg {
+    font-size: 1rem;
+  }
+
+  .benefit-item {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .benefit-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 0.75rem;
+  }
+}
+
+/* ===== BENEFITS LIST ===== */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--gray-50);
+  border-radius: 0.5rem;
+  border-left: 3px solid var(--teal);
+  text-align: left;
+}
+
+.benefit-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.benefit-text {
+  flex: 1;
+  color: var(--gray-700);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+/* ===== HUBSPOT FORM STYLES ===== */
+.hbspt-form {
+  margin: 1.5rem 0;
+}
+
+/* Style form inputs */
+.hbspt-form input[type="text"],
+.hbspt-form input[type="email"],
+.hbspt-form input[type="tel"],
+.hbspt-form textarea,
+.hbspt-form select {
+  width: 100% !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 1rem !important;
+  border: 2px solid var(--gray-300) !important;
+  border-radius: 0.5rem !important;
+  transition: border-color 0.2s ease !important;
+  font-family: var(--font-sans) !important;
+  background: var(--white) !important;
+  color: var(--gray-900) !important;
+}
+
+.hbspt-form input[type="text"]:focus,
+.hbspt-form input[type="email"]:focus,
+.hbspt-form input[type="tel"]:focus,
+.hbspt-form textarea:focus,
+.hbspt-form select:focus {
+  outline: none !important;
+  border-color: var(--teal) !important;
+  box-shadow: 0 0 0 3px rgba(0, 105, 96, 0.1) !important;
+}
+
+/* Style form labels */
+.hbspt-form label {
+  display: block !important;
+  font-weight: 600 !important;
+  color: var(--gray-900) !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 0.875rem !important;
+}
+
+/* Style submit button */
+.hbspt-form input[type="submit"],
+.hbspt-form .hs-button {
+  background-color: var(--red) !important;
+  color: var(--white) !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  border-radius: 0.5rem !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  font-size: 1rem !important;
+  font-family: var(--font-sans) !important;
+  width: 100% !important;
+  margin-top: 0.5rem !important;
+}
+
+.hbspt-form input[type="submit"]:hover,
+.hbspt-form .hs-button:hover {
+  background-color: #d63730 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(239, 65, 54, 0.3) !important;
+}
+
+/* Style form fields container */
+.hbspt-form .hs-form-field {
+  margin-bottom: 1rem !important;
+}
+
+/* Style error messages */
+.hbspt-form .hs-error-msgs label {
+  color: var(--red) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Style required indicator */
+.hbspt-form .hs-form-required {
+  color: var(--red) !important;
+}
+
+/* Remove default HubSpot styles that conflict */
+.hbspt-form fieldset {
+  max-width: 100% !important;
+}
+
+.hbspt-form .hs-input {
+  width: 100% !important;
+}
