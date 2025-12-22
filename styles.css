@@ -446,6 +446,60 @@ body {
   line-height: 1.5;
 }
 
+/* ===== DEALS LIST ===== */
+.deals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.deal-item {
+  padding: 0.75rem 0 0.75rem 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray-700);
+  font-size: 1rem;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--gray-200);
+  position: relative;
+}
+
+.deal-item::before {
+  content: '🏷️';
+  position: absolute;
+  left: 0;
+  font-size: 1.125rem;
+}
+
+.deal-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Recent deals card styling for join page */
+.recent-deals-card {
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .deal-item {
+    padding: 0.625rem 0 0.625rem 1.75rem;
+    font-size: 0.9375rem;
+  }
+
+  .deal-item::before {
+    font-size: 1rem;
+  }
+
+  .recent-deals-card {
+    padding: 1.25rem;
+  }
+}
+
 /* ===== HUBSPOT FORM STYLES ===== */
 .hbspt-form {
   margin: 1.5rem 0;
