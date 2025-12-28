@@ -15,6 +15,75 @@
 
   gtag('config', 'G-VPVHLR5F81');
 </script>
+<script>
+  // Custom event tracking for user engagement
+  document.addEventListener('DOMContentLoaded', function() {
+
+    // 1. Scroll Depth Tracking
+    var scrollMilestones = {25: false, 50: false, 75: false, 100: false};
+    var scrollTimeout;
+
+    function trackScrollDepth() {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(function() {
+        var scrollPercent = Math.round(
+          ((window.scrollY + window.innerHeight) / document.body.scrollHeight) * 100
+        );
+
+        // Fire events for milestones as they're reached
+        Object.keys(scrollMilestones).forEach(function(milestone) {
+          if (scrollPercent >= milestone && !scrollMilestones[milestone]) {
+            scrollMilestones[milestone] = true;
+            gtag('event', 'scroll', {
+              event_category: 'engagement',
+              event_label: 'scroll_' + milestone
+            });
+          }
+        });
+      }, 250);
+    }
+
+    window.addEventListener('scroll', trackScrollDepth);
+
+    // 2. Instagram Link Click Tracking
+    var instagramLink = document.querySelector('a[href*="instagram.com"]');
+    if (instagramLink) {
+      instagramLink.addEventListener('click', function() {
+        gtag('event', 'click', {
+          event_category: 'outbound',
+          event_label: 'instagram'
+        });
+      });
+    }
+
+    // 3. HubSpot Form Field Focus Tracking
+    function trackFormFieldFocus() {
+      var emailInput = document.querySelector('.hbspt-form input[type="email"]');
+      if (emailInput && !emailInput.dataset.tracked) {
+        emailInput.dataset.tracked = 'true';
+        emailInput.addEventListener('focus', function() {
+          gtag('event', 'form_start', {
+            event_category: 'engagement',
+            event_label: 'email_focus'
+          });
+        }, {once: true});
+      }
+    }
+
+    // Poll for HubSpot form to load (it's injected dynamically)
+    var formCheckInterval = setInterval(function() {
+      if (document.querySelector('.hbspt-form')) {
+        trackFormFieldFocus();
+        clearInterval(formCheckInterval);
+      }
+    }, 500);
+
+    // Clear interval after 10 seconds if form never loads
+    setTimeout(function() {
+      clearInterval(formCheckInterval);
+    }, 10000);
+  });
+</script>
 </head>
 <body>
   <div class="landing-page">

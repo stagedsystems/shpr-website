@@ -15,6 +15,33 @@
 
   gtag('config', 'G-VPVHLR5F81');
 </script>
+<script>
+  // Custom event tracking for user engagement
+  document.addEventListener('DOMContentLoaded', function() {
+
+    // Instagram Link Click Tracking
+    var instagramLink = document.querySelector('a[href*="instagram.com"]');
+    if (instagramLink) {
+      instagramLink.addEventListener('click', function() {
+        gtag('event', 'click', {
+          event_category: 'outbound',
+          event_label: 'instagram'
+        });
+      });
+    }
+
+    // Typeform Survey Link Click Tracking
+    var surveyLink = document.querySelector('a[href*="typeform.com"]');
+    if (surveyLink) {
+      surveyLink.addEventListener('click', function() {
+        gtag('event', 'click', {
+          event_category: 'outbound',
+          event_label: 'survey'
+        });
+      });
+    }
+  });
+</script>
 </head>
 <body>
   <!-- Header -->
