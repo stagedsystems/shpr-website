@@ -120,12 +120,14 @@
         </ul>
 
         <!-- HubSpot Form -->
+        <div id="hubspotForm"></div>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
         <script>
           hbspt.forms.create({
+            region: "na1",
             portalId: "46459277",
             formId: "842574d9-ab40-4736-9207-451bd6db0bba",
-            region: "na1"
+            target: "#hubspotForm"
           });
         </script>
 
