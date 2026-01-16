@@ -592,3 +592,148 @@ body {
 .hbspt-form .hs-input {
   width: 100% !important;
 }
+
+/* ===== DEALS PAGE ===== */
+.deals-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.deals-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.deals-header .logo-small {
+  height: 50px;
+  width: auto;
+}
+
+.deals-search {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--gray-300);
+  border-radius: 0.5rem;
+  width: 200px;
+  max-width: 100%;
+}
+
+.deals-search:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.deals-content {
+  line-height: 1.6;
+}
+
+.deals-store {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--teal);
+  margin: 2rem 0 0.25rem;
+  padding-top: 1.5rem;
+  border-top: 3px solid var(--teal);
+}
+
+.deals-store:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.deals-date {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.deals-category {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin: 1.25rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.deals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.deals-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--gray-100);
+  color: var(--gray-700);
+}
+
+.deals-item:last-child {
+  border-bottom: none;
+}
+
+.deals-featured {
+  background: var(--light-teal);
+  margin: 0.25rem -0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border-bottom: none;
+}
+
+.deals-name {
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.deals-price {
+  color: var(--red);
+}
+
+.deals-bogo {
+  font-weight: 700;
+  color: var(--teal);
+}
+
+.deals-badge {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.deals-divider {
+  border: none;
+  border-top: 2px solid var(--gray-200);
+  margin: 2rem 0;
+}
+
+@media (max-width: 640px) {
+  .deals-page {
+    padding: 0.75rem;
+  }
+
+  .deals-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .deals-search {
+    width: 100%;
+  }
+
+  .deals-store {
+    font-size: 1.5rem;
+  }
+
+  .deals-category {
+    font-size: 1rem;
+  }
+}

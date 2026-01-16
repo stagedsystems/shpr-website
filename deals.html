@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Deals | Magic City Savers</title>
+  <meta name="description" content="Browse this week's grocery deals across Birmingham stores.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVHLR5F81"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VPVHLR5F81');
+  </script>
+</head>
+<body>
+  <div class="deals-page">
+    <header class="deals-header">
+      <a href="index.html">
+        <img src="mcc_full_logo.png" alt="Magic City Savers" class="logo-small">
+      </a>
+      <input type="text" id="search" class="deals-search" placeholder="Search deals...">
+    </header>
+    <main id="deals-content" class="deals-content">
+      <p class="text-center text-gray-600">Loading deals...</p>
+    </main>
+  </div>
+  <script src="deals.js"></script>
+</body>
+</html>
