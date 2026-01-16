@@ -690,8 +690,7 @@ body {
 }
 
 .deals-name {
-  font-weight: 600;
-  color: var(--gray-900);
+  color: var(--gray-700);
 }
 
 .deals-price {
