@@ -714,6 +714,41 @@ body {
   margin: 2rem 0;
 }
 
+.deals-controls {
+  margin-bottom: 1rem;
+}
+
+.deals-toggle {
+  display: inline-flex;
+  border: 2px solid var(--gray-300);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.deals-toggle button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  background: var(--white);
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.deals-toggle button:not(:last-child) {
+  border-right: 1px solid var(--gray-300);
+}
+
+.deals-toggle button:hover {
+  background: var(--gray-50);
+}
+
+.deals-toggle button.active {
+  background: var(--teal);
+  color: var(--white);
+}
+
 @media (max-width: 640px) {
   .deals-page {
     padding: 0.75rem;
