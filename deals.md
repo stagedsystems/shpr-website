@@ -424,3 +424,62 @@
 - Dole Spinach 8 oz — BOGO ($4.29 ea)
 - Know & Love Organic Greens, assorted, 5 oz — 2 for $7
 - Organic Romaine Hearts 12 oz, 3 ct — $4.12
+
+---
+
+# Walmart
+*Valid Feb 8, 2026 (everyday low prices + rollbacks)*
+
+## Meat & Seafood
+- **Smithfield Fresh Pork Shoulder Butt Roast, 5.5-8.5 lbs — $1.88/lb** ⭐
+- **Eye of Round Roast, Choice Angus Beef — $6.84/lb** ⭐
+- Beef Choice Angus Rump Roast — $6.94/lb
+- London Broil Steak, Choice Angus Beef — $7.74/lb (REPEAT) 🔁
+- Grobbel's Fresh Corned Beef Brisket Flat — $7.28/lb
+- 73% Lean Ground Beef, 10 lb Roll — $3.86/lb (REPEAT) 🔁
+- 73% Lean Ground Beef, 5 lb Roll — $3.99/lb (REPEAT) 🔁
+- 80% Lean Ground Beef Chuck, 5 lb Roll — $4.75/lb (REPEAT) 🔁
+- **Pork Center Cut Loin Chops, Bone-In Large — $3.27/lb** ⭐
+- Pork Center Cut Loin Chops, Bone-In — $3.47/lb (REPEAT) 🔁
+- Pork Center Cut Loin Chops, Thin, Bone-In — $3.43/lb (REPEAT) 🔁
+- Sanderson Farms Fresh Chicken Party Wings — $4.64/lb (REPEAT) 🔁
+- Great Value All Natural Chicken Breasts, 5 lb (Frozen) — $2.77/lb (REPEAT) 🔁
+
+## Processed Meats
+- **Hormel Black Label Original Bacon, 16 oz — $5.97** ⭐
+- Hormel Black Label Thick Cut Bacon, 16 oz — $5.97 (REPEAT) 🔁
+- Great Value Hickory Smoked Thick Cut Bacon, 24 oz — $7.64 (REPEAT) 🔁
+- Wright Brand Applewood Smoked Thick Cut Bacon, 24 oz — $9.88 (REPEAT) 🔁
+- **Great Value Original Premium Sausage Roll, 16 oz — $2.94** ⭐ (REPEAT) 🔁
+- Jimmy Dean Premium Pork Sausage Roll, 16 oz — $3.97 (REPEAT) 🔁
+- Johnsonville Polish Kielbasa Smoked Sausage, 13.5 oz — $3.96 (REPEAT) 🔁
+- Eckrich Skinless Smoked Sausage, 14 oz — $3.26 (REPEAT) 🔁
+- Hillshire Farm Lit'l Smokies, 14 oz — $3.86 (REPEAT) 🔁
+
+## Produce & Fruit
+- Fresh Banana — $0.20/ea
+- Fresh Hass Avocados — $0.62/ea (REPEAT) 🔁
+- **Fresh Blueberries, 1 Pint — $2.77** ⭐
+- Fresh Strawberries, 1 lb — $3.52
+- Fresh Pineapple — $2.18
+- Mango — $0.97 (REPEAT) 🔁
+- Fresh Gala Apples, 3 lb Bag — $2.58 (REPEAT) 🔁
+- Fresh Lime — $0.25/ea (REPEAT) 🔁
+- Fresh Lemon — $0.58 (REPEAT) 🔁
+- Fresh Navel Oranges, 4 lb Bag — $3.97 (REPEAT) 🔁
+- Fresh Peelz California Mandarin Oranges, 3 lb Bag — $3.97 (REPEAT) 🔁
+- Fresh Grapefruit — $1.24 (REPEAT) 🔁
+- **Fresh Cucumber — $0.76/ea** ⭐ (REPEAT) 🔁
+- Fresh Roma Tomato — $0.92/lb (REPEAT) 🔁
+- Fresh Grape Tomato, 10 oz — $2.27 (REPEAT) 🔁
+- Fresh Yellow Onions, 3 lb Bag — $2.84 (REPEAT) 🔁
+- Fresh Green Onions Bunch — $0.96 (REPEAT) 🔁
+- **Fresh Green Cabbage — $0.86/lb** ⭐
+- Fresh Green Beans, 26.5 oz — $1.78/lb (REPEAT) 🔁
+- Fresh Broccoli Crowns — $2.18/lb
+- Fresh Sweet Corn on the Cob — $0.68/ea (REPEAT) 🔁
+- Fresh Yellow Squash — $1.28/lb (REPEAT) 🔁
+- Fresh Zucchini — $1.28/lb (REPEAT) 🔁
+- Sweet Potatoes — $1.14/lb (REPEAT) 🔁
+- Russet Potatoes, 5 lb Bag — $3.74 (REPEAT) 🔁
+- Fresh Whole White Mushrooms, 8 oz — $1.58 (REPEAT) 🔁
