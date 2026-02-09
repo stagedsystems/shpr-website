@@ -427,6 +427,132 @@
 
 ---
 
+# Target
+*Valid Feb 2–8, 2026*
+
+## Meat & Seafood
+- Fresh 73/27 Ground Beef, 1 lb, Good & Gather — $6.19 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh All Natural 80/20 Ground Beef, 1 lb, Good & Gather — $6.69 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh All Natural 80/20 Ground Beef, 2 lbs, Good & Gather — $12.79 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh All Natural 85/15 Ground Beef, 1 lb, Good & Gather — $7.19 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh All Natural 85/15 Ground Beef, 2 lbs, Good & Gather — $13.69 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh All Natural 93/7 Ground Beef, 1 lb, Good & Gather — $7.69 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh All Natural 93/7 Ground Beef, 2 lbs, Good & Gather — $14.59 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh 93% Lean Ground Beef, 3 lb, Good & Gather — $21.69 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh Organic 100% Grassfed 85/15 Ground Beef, 1 lb, Good & Gather — $7.99 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- Fresh Organic 100% Grassfed 90/10 Ground Beef, 1 lb, Good & Gather — $8.49 (Buy 1, get 1 20% off)
+- Fresh Organic 100% Grassfed Ground Beef Twin Pack, 2 lbs, Good & Gather — $14.89 (Buy 1, get 1 20% off)
+- ButcherBox Grass Fed Ground Beef 85/15, 16 oz — $7.99 (Buy 1, get 1 20% off) (REPEAT) 🔁
+- ButcherBox Grass Fed Ground Beef 90/10, 16 oz — $8.49 (Buy 1, get 1 20% off)
+- Fresh 93/7 Ground Beef Burger Patties, 1 lb, Good & Gather — $8.19 (Buy 1, get 1 20% off)
+- Fresh All Natural 85/15 Ground Round Burger Patties, 4pk/1 lb, Good & Gather — $7.69 (Buy 1, get 1 20% off)
+- Fresh Steakhouse Seasoned Tavern Beef Burger Patties, 1.33 lbs, Good & Gather — $8.99 (Buy 1, get 1 20% off)
+- Fresh Ground Beef Patties 80% lean, 10ct/32 oz, Good & Gather — $10.00 (Buy 1, get 1 20% off)
+- Fresh Angus Beef Petite Sirloin Boneless Steak — $14.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef Petite Sirloin Steak Value Pack — $13.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef Top Sirloin Steak — $14.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef New York Strip Boneless Steak — $15.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef New York Strip Steak Family Pack — $14.99/lb (Buy 1, get 1 20% off)
+- Fresh Choice Angus Beef Ribeye Steak — $18.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef Ribeye Steak Value Pack — $17.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef All Natural T-Bone Steak — $13.99/lb (Buy 1, get 1 20% off)
+- **Fresh Angus Beef T-Bone Steak Family Pack — $12.99/lb (Buy 1, get 1 20% off)** ⭐
+- Fresh Angus Beef Flank Steak — $12.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef Skirt Steak — $12.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef Chuck Tender Steak — $11.99/lb (Buy 1, get 1 20% off)
+- Fresh Beef Cube Steak — $7.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef Chuck Roast — $9.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef Chuck Tender Roast — $10.99/lb (Buy 1, get 1 20% off)
+- Fresh Angus Beef Stew Meat, 16 oz, Good & Gather — $9.99 (Buy 1, get 1 20% off)
+- Fresh Angus Beef Stew Meat Family Pack, 24 oz, Good & Gather — $13.99 (Buy 1, get 1 20% off)
+- Fresh Angus Beef Sirloin Steak Strips, 14 oz, Good & Gather — $12.99 (Buy 1, get 1 20% off)
+- Fresh Angus Beef for Sandwich Steak — $9.99/lb (Buy 1, get 1 20% off)
+- Fresh Teriyaki Beef Sirloin Strips, 1 lb, Good & Gather — $12.99 (Buy 1, get 1 20% off)
+- Fresh Bourbon Black Pepper Beef Sirloin Steak Tips, 13 oz, Good & Gather — $13.99 (Buy 1, get 1 20% off)
+- Fresh Cracked Peppercorn Crusted Beef Sirloin Petite Steak, 16 oz, Good & Gather — $13.99 (Buy 1, get 1 20% off)
+- Fresh Carne Asada Seasoned Beef Skirt Steak, 19.84 oz, Good & Gather — $17.99 (Buy 1, get 1 20% off)
+- Fresh Cilantro Lime Beef Flank Steak Strips, Good & Gather — $11.99/lb (Buy 1, get 1 20% off)
+- Fresh Garlic Onion Chuck Roast, Good & Gather — $9.99/lb (Buy 1, get 1 20% off)
+- ButcherBox Grass Fed Beef Ribeye Steak, 10 oz — $13.99 (Buy 1, get 1 20% off)
+- ButcherBox Grass Fed Beef Top Sirloin Steak, 12 oz — $13.99 (Buy 1, get 1 20% off)
+- ButcherBox Grass Fed Beef New York Strip Loin Steak, 10 oz — $13.99 (Buy 1, get 1 20% off)
+- Verde Farms Organic Grassfed Ribeye, 10 oz — $11.99 (reg $13.99, Sale)
+- Verde Farms Organic Grassfed Sirloin, 12 oz — $11.99 (reg $13.99, Sale)
+- Verde Farms Organic Grassfed Strip, 10 oz — $11.99 (reg $13.99, Sale)
+- Fresh Mild Flavor Ground Pork, 1 lb, Good & Gather — $3.99 (REPEAT) 🔁
+- Fresh Boneless Butt Roast Pork Shoulder, Good & Gather — $3.99/lb (Buy 1, get 1 20% off)
+- **Fresh Garlic & Herb Seasoned Pork Tenderloin, 1-1.5 lbs, Good & Gather — $4.99/lb (Buy 1, get 1 20% off)** ⭐
+- Fresh Al Pastor Style Pork, Good & Gather — $6.99/lb (Buy 1, get 1 20% off)
+- Tyson Boneless & Skinless Chicken Breasts, Frozen, 40 oz — $8.49 (reg $9.99, Sale) (REPEAT) 🔁
+- Tyson All Natural Chicken Tenderloins, Frozen, 40 oz — $8.49 (reg $9.99, Sale) (REPEAT) 🔁
+- Tyson Thin Sliced Chicken Breast, Frozen, 2.25 lbs — $9.99
+- **Large Tail Off Peeled & Deveined Raw Shrimp, 41-50ct/16 oz, Good & Gather — $8.49 (Buy 2 for $15)** ⭐
+- Jumbo Tail On Peeled & Deveined Raw Shrimp, 26-30ct/16 oz, Good & Gather — $9.49 (Buy 2 for $15)
+- 21/25 Raw Peeled & Deveined Tail-Off Shrimp, 16 oz, Good & Gather — $11.49 (Buy 2 for $15)
+- 31/40 Wild Caught Large Raw Shrimp, Tail-Off, 16 oz, Good & Gather — $10.49 (Buy 2 for $15)
+- Colossal Easy Peel Tail On & Deveined Raw Shrimp, 13-15ct/16 oz, Good & Gather — $10.49 (Buy 2 for $15)
+- My Fish Dish Bay Farm Raised Raw Scallop, Frozen, 9 oz — $8.99 (reg $9.99, Sale)
+
+## Processed Meats
+- **Gilbert's Craft Chicken Sausage (assorted), 10 oz — $3.99 (reg $5.49, Sale)** ⭐ (REPEAT) 🔁
+- Hillshire Farm Beef Lit'l Smokies Smoked Sausage, 12 oz — $4.49 (Buy 2 for $7)
+- Hillshire Farm Lit'l Smokies Smoked Sausage, 14 oz — $4.49 (Buy 2 for $7)
+- Johnsonville Beddar with Cheddar Party Pack, 28 oz — $8.99
+- Jones Dairy Farm All Natural Turkey Sausage Links, 10ct/5 oz — $3.00 (REPEAT) 🔁
+- Jones All Natural Frozen Chicken Sausage, 5 oz — $3.00 (REPEAT) 🔁
+- Jones Dairy Farm All Natural Pork Sausage Links, 10ct/7 oz — $3.00 (REPEAT) 🔁
+- Applewood Smoked Uncured Turkey Bacon, 8 oz, Good & Gather — $3.99 (REPEAT) 🔁
+- Jones Canadian Bacon, 6 oz — $4.29 (reg $4.49, Sale)
+- Hormel Black Label Original Bacon, 16 oz — $5.99
+- Hormel Black Label Thick Cut Bacon Slices, 16 oz — $5.99
+- Hormel Black Label Applewood Thick Cut Smoked Bacon, 12 oz — $5.99
+- Hormel Black Label Center Cut Bacon, 12 oz — $5.99
+- Hormel Black Label Maple Bacon, 12 oz — $5.29
+- Hormel Black Label Jalapeno Bacon, 12 oz — $5.99
+- Hormel Black Label Franks Red Hot Sliced Bacon, 12 oz — $5.99
+- Hormel Black Label Original Thick Cut Bacon, 24 oz — $8.99
+- Hormel Black Label Cherrywood Thick Cut Bacon, 24 oz — $8.99
+- Hormel Black Label Fully Cooked Bacon Family Pack, 6.3 oz — $9.49 (reg $9.99, Sale)
+- Hormel Fully Cooked Bacon Slices, 2.52 oz — $4.19 (reg $4.49, Sale)
+- Oscar Mayer Mega Pack Hardwood Smoked Bacon, 22 oz — $8.99 (REPEAT) 🔁
+- Oscar Mayer Center Thick Cut Bacon, 12 oz — $6.99
+
+## Produce & Fruit
+- Fresh Organic Bananas, 2 lb — $1.79 (REPEAT) 🔁
+- **Fresh Strawberries, 1 lb — $2.99 (reg $3.39, Sale)** ⭐
+- Fresh Strawberries, 2 lb — $4.98 (reg $6.49, Sale)
+- Fresh Organic Strawberries, 16 oz — $5.99 (REPEAT) 🔁
+- Driscoll's Strawberries in a Heart Shaped Package, 15 oz — $5.99
+- Fresh Organic Raspberries, 6 oz — $4.79 (REPEAT) 🔁
+- Fresh Organic Blackberries, 6 oz — $3.59 (REPEAT) 🔁
+- Fresh Dark Sweet Cherries, 1 lb — $4.99 (REPEAT) 🔁
+- Fresh Organic Gala Apples, 2 lb Bag — $2.99 (REPEAT) 🔁
+- Fresh Fuji Apples, 3 lb Bag — $3.69 (REPEAT) 🔁
+- Fresh Organic Granny Smith Apples, 2 lb Bag — $4.19
+- Fresh Navel Oranges, 4 lb Bag — $3.99 (REPEAT) 🔁
+- Navel Oranges, 3 lb Bag — $2.99 (REPEAT) 🔁
+- Fresh Organic Navel Oranges, 3 lb — $4.99 (REPEAT) 🔁
+- Fresh Cara Cara Oranges, 3 lb Bag — $4.29 (REPEAT) 🔁
+- Fresh Red Grapefruit, each — $1.39 (REPEAT) 🔁
+- Kid-Sized Bartlett Pears, 3 lb Bag — $3.99 (REPEAT) 🔁
+- Fresh Pineapple, each — $2.39 (REPEAT) 🔁
+- Fresh Candy Hearts Red Seedless Grapes, 1 lb — $4.29 (REPEAT) 🔁
+- Fresh Romaine Hearts, 3ct/22 oz — $3.59 (REPEAT) 🔁
+- **Fresh Iceberg Lettuce Head, each — $1.99** ⭐ (REPEAT) 🔁
+- Fresh Romaine Lettuce Head, each — $2.29 (REPEAT) 🔁
+- **Fresh Cauliflower Head, each — $3.19** ⭐ (REPEAT) 🔁
+- Fresh Organic Baby Spinach, 5 oz — $2.79 (REPEAT) 🔁
+- Fresh Organic Spring Mix Lettuce, 5 oz — $2.79 (REPEAT) 🔁
+- Fresh Organic Baby Arugula, 5 oz — $2.79 (REPEAT) 🔁
+- Fresh Organic 50/50 Blend, 5.5 oz — $2.79
+- Fresh Organic Power Greens, 5 oz — $2.79
+- Fresh Sliced White Mushrooms, 8 oz — $1.79 (REPEAT) 🔁
+- **Fresh Whole White Mushrooms, 8 oz — $1.69** ⭐ (REPEAT) 🔁
+- Fresh Whole White Mushrooms, 16 oz — $3.29 (REPEAT) 🔁
+- Fresh SUNSET Organic Mini Cucumbers, 1 lb — $2.99 (REPEAT) 🔁
+
+---
+
 # Walmart
 *Valid Feb 8, 2026 (everyday low prices + rollbacks)*
 
