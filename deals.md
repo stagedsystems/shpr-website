@@ -1,157 +1,196 @@
-# Formatted Deals - Week Ending 2026-06-14
+# Formatted Deals - Week Ending 2026-06-22
 
 # Piggly Wiggly
-*Valid June 10-16, 2026*
+*Valid June 17–23, 2026*
 
 ## Meat & Seafood
-- **Fresh USDA Inspected Fryer Chicken Thighs & Drumsticks, Family Pack — $1.99/lb** ⭐
-- **Springer Mountain Farms 92% Lean Ground Chicken, 1 lb — $2.99** ⭐
-- **Butcher Fresh Boneless Center Cut Pork Chops — $2.99/lb** ⭐
-- **St. Louis Style Spare Ribs — $2.99/lb** ⭐
-- **Fresh Ground Chuck, Certified Angus Beef, Family Pack — $5.99/lb** ⭐ (REPEAT) 🔁
-- **Boneless Chuck Roast, Certified Angus Beef — $6.99/lb** ⭐
-- **Fresh Farm Raised Salmon Fillets — $11.99/lb** ⭐
-- Boneless Thin Cut Breakfast Pork Chops — $3.49/lb
-- Springer Mountain Farms All Natural Chicken Strips, Oven Roasted or Grilled, 8 oz — $3.49
-- Butterball 85% Lean Ground Turkey, 1 lb — $4.99
-- Butterball 93% Lean Ground Turkey, 1 lb — $7.49
-- USDA Inspected Fresh Cut New York Strip Steaks — $12.99/lb
-- Prime Boneless Denver Steak, Certified Angus Beef — $16.99/lb
-- Coldwater Lobster Tails, 7 oz — $11.99
-- Azalea Seafood Gumbo, 30 oz — $11.99
+- **USDA Whole Boneless Ribeyes — $12.99/lb** ⭐
+- Fresh Cut Boneless Ribeye Steaks — $14.99/lb
+- **Bone-In Tomahawk Steak, Certified Angus Beef — $16.99/lb** ⭐
+- **Fresh USDA Whole Peeled Boneless Beef Tenders — $17.99/lb** ⭐
+- **Boneless Rump Roast, Certified Angus Beef — $6.99/lb** ⭐
+- St. Louis Style Spare Ribs — $3.99/lb
+- Seaboard Baby Back Ribs — $4.99/lb
+- **Fresh Bone-In Center Cut Pork Chops — $2.99/lb** ⭐
+- Bone-In Breakfast Pork Chops — $3.99/lb
+- Beeler's Heritage Duroc Pork Boston Butts — $3.99/lb
+- Fresh USDA Boneless Skinless Chicken Tenders, Family Pack — $3.99/lb
+- Fresh USDA Whole Chicken Wings, Family Pack — $2.99/lb
+- Fresh USDA Cut Chicken Wings, Family Pack — $3.99/lb
+- **Coldwater Lobster Tails, 7 oz — $11.99 ea** ⭐
+- Fresh Farm Raised Salmon Fillets — $11.99/lb (REPEAT) 🔁
 
 ## Processed Meats
-- **Oscar Mayer Sliced Bacon, 12-16 oz — $5.99** ⭐ (REPEAT) 🔁
-- **Lil Butcher Shoppe Smoked Sausage, 14 oz — $4.99** ⭐
-- Oscar Mayer Beef Franks, 15 oz — $3.99
+- **Hormel Black Label Sliced Bacon, assorted, 16 oz — $4.99** ⭐
+- **Conecuh Smoked Sausage, assorted, 1 lb — $5.99** ⭐
+- Kentucky Legend Quarter Sliced Boneless Ham — $5.99/lb
+- Wrights Stack Pack Sliced Bacon, 1.5 lb — $5.99
 
 ## Produce & Fruit
-- **Fresh Potatoes, Red or Gold, 5-lb bag — 2 for $7** ⭐
-- **Fresh Jumbo Vidalia Onions — $0.99/lb** ⭐
-- **Fresh Extra Large Red Slicing Tomatoes — $1.49/lb** ⭐
-- **Fresh Georgia Grown Yellow or Zucchini Squash — $1.69/lb** ⭐
-- **Fresh Blueberries, 1 pint — 2 for $7** ⭐ (REPEAT) 🔁
-- Fresh Premium Washington Honeycrisp Apples — $1.99/lb
-- Fresh Imported Seedless Grapes, Red, Green or Black — $2.49/lb (REPEAT) 🔁
-- Fresh California Peaches or Nectarines, 2-lb bag — $3.99 (digital coupon)
-- Fresh White Mushrooms, Whole or Sliced, 8 oz — 2 for $4
-- Fresh Whole Seedless Watermelons — $6.99 each
+- **Fresh Georgia Grown Super Select Cucumbers — 69¢ ea** ⭐
+- **Fresh Georgia Grown Extra Large Green Bell Pepper — 79¢ ea** ⭐
+- **Fresh Idaho Baking Potatoes — 79¢/lb** ⭐
+- **Fresh Tomatoes On The Vine — $1.49/lb** ⭐ (REPEAT) 🔁
+- **Fresh Vidalia Onions, 3 lb bag — $2.49 (digital coupon)** ⭐
+- Fresh Corn In The Husk — 4/$2
+- Fresh Athena Cantaloupes — 2/$5
+- Fresh Whole Seedless Watermelons — $5.99 ea
+- Fresh Premium Strawberries, 1 lb — $3.99
+- Fresh Peaches or Nectarines — $2.99/lb
+- Fresh California Plums, Red or Black — $2.99/lb
+- Fresh Express Shreds, 8 oz — $1.29
 
 
 # Publix
-*Valid June 10-16, 2026*
+*Valid June 17–23, 2026 (Extended deals thru June 30)*
 
 ## Meat & Seafood
-- **Publix Pork Loin Rib Chops, Center Cut — $3.00/lb BOGO (reg. $5.99/lb)** ⭐
-- **Springer Mountain Farms Chicken Breasts, Boneless, Raised Without Antibiotics — $3.99/lb** ⭐
-- **GreenWise Ground Chicken, 16 oz — $3.49** ⭐
-- **GreenWise Extra Lean Pork Tenderloin, Boneless, Raised Without Antibiotics — $6.99/lb** ⭐
-- **Bottom Round Roast, Publix USDA Choice Beef — $7.99/lb** ⭐
-- **Tilapia Fillets, Fresh, Responsibly Sourced — $7.99/lb** ⭐
-- **White Shrimp, Colossal, Responsibly Sourced, Previously Frozen — $9.99/lb** ⭐
-- Publix Pork Loin Rib Chops, Thinly-Sliced — $3.25/lb BOGO (reg. $6.49/lb)
-- GreenWise Organic Chicken Breast Fillets, Boneless, Skinless — $6.99/lb
-- GreenWise Organic Boneless Chicken Tenders — $7.99/lb
-- Butterball Ground Turkey, 93% Lean, 16 oz — 2 for $9.00
-- Jennie-O Turkey Burgers, Frozen, 32 oz — $8.99
-- Lean Ground Beef, 7% Fat, Publix, 3+ lb pkg — $8.99/lb
-- GreenWise 92% Lean Ground Beef — $10.99/lb
-- Steakhouse Elite Signature Ground Beef, Kobe-Crafted, 16 oz — $9.99
-- Top Sirloin Steak, Boneless, Publix USDA Choice Beef — $10.99/lb
-- Top Sirloin Fillet, Publix USDA Choice Beef — $11.99/lb
-- Bottom Sirloin Flap Steak (Bavette Steak), Publix USDA Choice Beef — $15.99/lb
-- Bottom Round Steaks, Boneless, Publix USDA Choice Beef — $8.49/lb
-- Top Blade Roast, Publix USDA Choice Beef — $8.99/lb
-- Rump Roast, Publix USDA Choice Beef — $8.29/lb
-- Beef Shank for Soup, Publix USDA Choice Beef — $5.99/lb
-- GreenWise Angus New York Strip Steak, Boneless, USDA Choice — $19.99/lb
-- GreenWise Lamb Loin Chops, Raised Without Antibiotics — $10.99/lb
-- Salmon Select Cuts, Fresh, Responsibly Sourced, 5.25 oz each — $6.99
-- De Bilt Cold Smoked Salmon, Scottish Style, Sliced, 4 oz — $9.99
-- White Shrimp, P&D, Medium, 51-60/lb, Previously Frozen — $8.99/lb
-- Publix Cooked Shrimp, Extra Large P&D, 24 oz — $13.50/pkg BOGO (reg. $26.99/pkg)
-- GreenWise White Shrimp, Jumbo, 16-20/lb, Wild, Frozen — $12.99/lb
-- Cooked Shrimp, Extra Large, 26-30/lb, Previously Frozen — $11.99/lb
-- GreenWise Snow Crab Clusters, Wild, Sustainably Sourced — $13.99/lb
-- Lobster Tails, Small, Wild, Previously Frozen, 3 oz each — $6.99 (REPEAT) 🔁
-- Margaritaville Shrimp Appetizers, Frozen, 8 or 10 oz — $6.00/pkg BOGO (reg. $11.99/pkg)
-- Publix Snapper Fillets, Wild, Frozen, 12 oz — $13.99
-- Cedar Bay Cedar Planked Atlantic Salmon, Frozen, 9.7 oz — $10.99
-- Philly Gourmet Sandwich Steaks, 21 oz — $6.00/pkg BOGO (reg. $11.99/pkg)
-- Tyson Grilled Chicken Bites (or Tenders or Strips), 20-22 oz — $5.51/pkg BOGO (reg. $11.01/pkg)
-- Perdue Air Fryer Ready Wings, Frozen, 22 oz — $6.70/pkg BOGO (reg. $13.39/pkg)
+- Ribeye Steak, Bone-In, Publix USDA Choice — $14.99/lb
+- Ribeye Steak, Boneless — $16.99/lb
+- Ribeye Steaks, Boneless Thin-Sliced — $17.49/lb
+- Ribeye Steaks, Bone-In Thin-Sliced — $15.49/lb
+- Ribeye Roast, Boneless — $16.49/lb
+- Standing Rib Roast, Publix USDA Choice, Boned & Tied — $14.49/lb
+- Sirloin Tri-Tip Roast, Publix USDA Choice — $13.99/lb
+- Sirloin Tri-Tip Steaks — $14.49/lb
+- **GreenWise Angus Top Sirloin Steak, Boneless, USDA Choice — $11.99/lb** ⭐
+- GreenWise Angus Top Sirloin Fillet — $12.99/lb
+- GreenWise Angus Top Sirloin Fillet, Thin-Sliced — $13.49/lb
+- GreenWise Angus Top Sirloin Cap Steak — $12.99/lb
+- **Top Round London Broil, Publix USDA Choice — $7.99/lb** ⭐
+- Top Round Steaks — $8.49/lb
+- Top Round Steak, Thin-Sliced — $8.99/lb
+- Top Round Roast — $7.99/lb
+- Ground Chuck, Publix Beef, 3 lbs or More Package — $7.99/lb
+- Beef Cubed Steak, Publix USDA Choice — $7.99/lb
+- **Beef Back Ribs, Publix USDA Choice — $3.99/lb** ⭐
+- Chuck Short Ribs, Publix USDA Choice — $9.99/lb
+- Chuck Flanken Style Ribs — $10.49/lb
+- GreenWise Angus Chuck Roast, Boneless, USDA Choice — $11.99/lb
+- GreenWise Angus Flank Steak, USDA Choice — $15.99/lb
+- Outside Skirt Steak — $23.99/lb
+- Publix Pork Boston Butt Roast, Bone-In — $3.49/lb
+- Publix Pork Boston Butt Roast, Boneless — $3.79/lb
+- Publix Boneless Lean Pork Loin Chops, Regular — $5.99/lb
+- Publix Boneless Lean Pork Loin Chops, Thinly-Sliced — $6.49/lb
+- Prairie Fresh Pork Tenderloin, 18.4 oz — 2 for $12.00 ($6.00 ea)
+- Publix St. Louis Style Pork Spareribs, Whole In-the-Bag Frozen — BOGO ($3.00/lb ea, reg. $5.99/lb)
+- **Publix Pork Loin Back Ribs, Whole In-the-Bag Frozen — BOGO ($3.35/lb ea, reg. $6.69/lb)** ⭐
+- GreenWise Pork Loin Back Ribs — $7.49/lb
+- **Publix Chicken Leg Quarters, USDA Grade A — $1.49/lb** ⭐
+- Publix Chicken Drumsticks, USDA Grade A, 4 lbs or More — $1.99/lb
+- Publix Chicken Thighs — $2.39/lb
+- Publix Boneless Skinless Chicken Breast, 4 lbs or More — BOGO (save up to $5.39/lb)
+- GreenWise Chicken Breast Tenderloins, Raised Without Antibiotics — $6.99/lb
+- GreenWise Chicken Cutlets, Raised Without Antibiotics — $5.99/lb
+- Farmer Focus Organic Chicken Party Wings — BOGO ($3.25/lb ea, reg. $6.49/lb)
+- Springer Mountain Farms Chicken Breasts, Boneless, 24 oz — $6.99
+- Springer Mountain Farms Chicken Wings, 32 oz — $6.99
+- **White Shrimp, Large, 31-35 per lb — $7.99/lb** ⭐
+- **GreenWise Snow Crab Clusters, Wild — $13.99/lb** ⭐ (REPEAT) 🔁
+- Lobster Tails, Small, Wild, 3 oz ea — $6.99 ea
+- Cooked Shrimp, Jumbo, 16-20 per lb — $12.99/lb
+- **GreenWise Patagonian Scallops, Wild, Fresh — $10.99/lb** ⭐
+- GreenWise Patagonian Scallops, Wild Caught, Frozen, 24 oz — $16.49
+- Rainbow Trout Fillets, Fresh Farmed — $9.99/lb
+- Bluehouse Atlantic Salmon Fillets, Fresh From Florida — $14.99/lb
+- GreenWise Sockeye Salmon Fillets, Wild, Frozen, 12 oz — $15.99
+- Bourbon Marinated Salmon, Fresh, 5.25 oz — $7.99
 
 ## Processed Meats
-- **Carando Italian Sausage (or Smithfield Bratwurst), 19 oz — $3.50/pkg BOGO (reg. $6.99/pkg)** ⭐
-- **Eckrich Polska Kielbasa (or Smoked Sausage), 13-16 oz — $3.00/pkg BOGO (reg. $5.99/pkg)** ⭐
-- **GreenWise Italian Chicken Sausage, Mild, Hot, or Mild With Kale, 16 oz — $5.99** ⭐
-- Oscar Mayer Wieners (or Franks or Smokies), 14 or 16 oz — $2.75/pkg BOGO (reg. $5.49/pkg)
-- Smithfield Anytime Favorites Smoked Ham, Cubed or Diced, Fully Cooked, 8 oz — $2.00/pkg BOGO (reg. $3.99/pkg)
-- Land O' Frost Premium Lunch Meats, 14-16 oz — $4.30/pkg BOGO (reg. $8.59/pkg)
-- Smithfield Breakfast Sausage, Hometown Original, 12 or 16 oz — 2 for $8.00
-- Hatfield Smoked Bacon, 16 oz — $6.99
-- Coleman Uncured Bacon, Hickory Smoked, 12 oz — $5.99
-- GreenWise Organic Uncured Turkey Bacon, 8 oz — $6.49
-- Banquet Brown'N Serve Sausage Links (or Patties), Frozen, 6.4 oz — $1.32/pkg BOGO (reg. $2.63/pkg)
+- **Hillshire Farm Smoked Sausage or Polska Kielbasa, 12-14 oz — BOGO ($3.00–3.25 ea, reg. $6.49)** ⭐
+- **Smithfield Spiral Sliced Ham, Boneless Brown Sugar Smoked — $5.99/lb** ⭐
+- Hormel Black Label Bacon, 12 or 16 oz — BOGO (~$5.00 ea)
+- Oscar Mayer Bacon, 12 or 16 oz — 2 for $12.00
+- Butterball Turkey Bacon, 12 oz — BOGO (~$2.18 ea)
+- Publix Colombian-Style Pork Sausage, Limited Edition, 16 oz — $5.69
+- Publix Italian Turkey Sausage, Hot or Mild, 20 oz — $6.99
+- Johnsonville Sausage Links or Bratwurst, 16-19 oz Frozen — 2 for $11.00
+- Butterball Turkey Sausage or Polska Kielbasa, 13 oz — BOGO (~$2.50 ea)
+- Butterball Turkey Breakfast Sausage Patties, 8 oz — BOGO (~$2.35 ea)
+- Frick's Sliced Ham, Boneless Smoked Fully Cooked, 12 oz — BOGO (~$3.05 ea)
+- Smithfield Anytime Favorites Ham Steak, Boneless, 8 oz — BOGO (~$2.00 ea)
 
 ## Produce & Fruit
-- **Bulk Sweet Corn, each — 5 for $3** ⭐ (REPEAT) 🔁
-- **Broccoli or Cauliflower, each bunch — $2.99** ⭐ (REPEAT) 🔁
-- **Hot House Cucumbers — $1.50 each BOGO (reg. $3.00)** ⭐
-- **Anjou Pears, 2-lb bag — $2.50/bag BOGO ($1.25/lb, reg. $4.99/bag)** ⭐
-- **Blueberries, 11-oz pkg — $3.00/pkg BOGO (reg. $5.99/pkg)** ⭐ (REPEAT) 🔁
-- Mini San Marzano Tomatoes, 10 oz — $2.00/pkg BOGO (reg. $3.99/pkg)
-- Fresh Express Salad Blends (plain), 5-9 oz — $2.50/pkg BOGO (reg. $4.99/pkg)
-- Publix White Mushrooms, Whole, 8 oz — 2 for $4.00
-- Publix Green Beans, 1-lb bag — 2 for $5.00 (REPEAT) 🔁
-- Grape Tomatoes, 1 pint — 2 for $5.00
-- Pero Family Farms Organic Broccoli Florets, 8 oz — 2 for $7.00
+- **Broccoli or Cauliflower, each bunch — 2 for $6** ⭐
+- **Kale Greens — 4 for $5 ($1.25/bunch)** ⭐
+- **Sunset Angel Sweet Tomatoes, 1 pt — BOGO (~$2.50 ea)** ⭐
+- **Bartlett, Red, or Bosc Pears — $1.99/lb** ⭐
+- **Mango — 3 for $5 ($1.67 ea)** ⭐
+- Sweet Corn, Bulk — 5 for $3.00 (REPEAT) 🔁
 - Asparagus — $3.99/lb (REPEAT) 🔁
-- Yellow Squash or Zucchini, 24-oz tray — $3.99 (REPEAT) 🔁
-- Publix Red Potatoes, 5-lb bag — $3.99
-- Publix Classic Salad Blend, 16 oz — $1.99 (REPEAT) 🔁
-- Tree-Ripened Peaches or Nectarines, California-Grown — $2.99/lb (REPEAT) 🔁
-- Organic Peaches or Nectarines — $3.49/lb
-- Red or Black Plums, California-Grown — $2.99/lb (REPEAT) 🔁
+- Northwestern Cherries, Sweet — $3.99/lb
+- Tree-Ripened Peaches or Nectarines — $2.99/lb (REPEAT) 🔁
+- Large Honeycrisp or Cosmic Crisp Apples — $2.49/lb
+- Red or Black Plums — $2.99/lb (REPEAT) 🔁
 - Red or White Seedless Grapes — $2.99/lb (REPEAT) 🔁
-- Organic Cotton Candy Grapes — $4.99/lb
-- Cherries — $5.99/lb
-- Small Red Seedless Watermelon, each — $5.99 (REPEAT) 🔁
-- Publix Red Seedless Watermelon Chunks — $2.00/lb BOGO (reg. $3.99/lb)
-- GreenWise Organic Gala Apples (or Pink Lady Tart Apples), 2-lb bag — 2 for $10.00
-- Envy or Fuji Apples, Large — $1.99/lb
-- Lychee Fruit, 1 pint — $4.99
+- Baby Seedless Cucumbers, 16 oz — BOGO (~$2.50 ea)
+- Small Red Seedless Watermelon — $5.99 ea (REPEAT) 🔁
+- Yellow Squash or Zucchini, 24 oz tray — 2 for $7.00
+- Vidalia Sweet Onions, 3 lb bag — $3.99
+- Publix Idaho Russet Potatoes, 5 lb bag — $3.99
+- Publix Green Beans, 1 lb bag — $2.99
 
 
 # Aldi
-*Valid June 10-16, 2026*
+*Valid June 17–23, 2026 (Extended Grill: June 17–July 14)*
 
 ## Meat & Seafood
-- **Perdue Fresh Antibiotic Free Family Pack Drumsticks — $0.89/lb** ⭐
-- **Fresh Family Pack Chicken Drumsticks, About 4.5 lb — $0.99/lb (PRICE DROP)** ⭐ (REPEAT) 🔁
-- **Fresh Family Pack Chicken Breasts, About 5.0 lb — $2.19/lb (PRICE DROP)** ⭐ (REPEAT) 🔁
-- **Fresh Family Pack Organic Grass-Fed 93/7 Ground Beef, 5-6 lb — $5.99/lb** ⭐
-- **Fresh from ALDI Steakhouse Tri-Tip — $6.49/lb** ⭐
-- **Fresh Sweet Bourbon Atlantic Salmon on a Cedar Plank — $10.99/lb** ⭐
-- **Black Angus Choice Petite Sirloin Steaks, About 1.3 lb — $8.99/lb** ⭐ (REPEAT) 🔁
-- Black Angus Choice Top Sirloin Steak, About 1.8 lb — $9.99/lb (REPEAT) 🔁
-- Fremont Fish Market Salmon Burgers, Chipotle or Teriyaki, 11.2 oz, Frozen — $5.99
+- **Kirkwood Fresh Family Pack Chicken Drumsticks, About 4.5 lb — $0.99/lb** ⭐ (REPEAT) 🔁
+- **Kirkwood Fresh Family Pack Chicken Thighs — $1.55/lb** ⭐
+- **Kirkwood Family Pack Chicken Breasts, About 5 lb — $2.19/lb** ⭐ (REPEAT) 🔁
+- **Fresh Family Pack Chicken Tenderloins — $2.49/lb** ⭐
+- Fresh Family Pack Chicken Wings — $2.89/lb
+- **Smithfield Boneless Pork Shoulder Butt Roast — $1.99/lb** ⭐
+- Fresh Baby Back Pork Ribs — $3.79/lb
+- **Fresh Pork Spareribs — $1.99/lb** ⭐
+- Fresh Seasoned Pork Shoulder Roast — $2.39/lb
+- Fresh Thick-Cut Boneless Pork Chops — $3.49/lb
+- **Fresh Black Angus Petite Sirloin Steaks, About 1.3 lb — $8.99/lb** ⭐ (REPEAT) 🔁
+- Black Angus Top Sirloin Steak, About 1.8 lb — ~$9.99/lb (REPEAT) 🔁
+- Fresh Black Angus Skirt Steak — $11.99/lb
+- Fresh Black Angus Beef Strip Steak — $13.79/lb
+- Fresh Seasoned Brisket, Salt & Pepper or BBQ — $6.99/lb
+- Fresh 80% Lean Ground Beef Patties — $4.99/lb
+- Fresh Chuck & Brisket Angus Beef Burgers — $5.99/lb
+- Fresh 93/7 Ground Beef Burgers — $6.49
+- Simply Nature Fresh 85% Lean Organic Grass-Fed Ground Beef, 1 lb — $5.99
+- **Fresh Atlantic Salmon Side — $8.29/lb** ⭐
+- Fresh Atlantic Salmon on a Cedar Plank — $10.29/lb
+- Fresh Atlantic Salmon — $8.99/lb
+- Fresh Jumbo Raw Peeled & Deveined Tail-Off Shrimp — $9.49/lb
+- Ahi Tuna Steaks — $8.99/lb
+- Sweet Chili Lime Chicken Skewers, 22.57 oz — $7.49
+- Pollo Asado Chicken Skewers, 22.57 oz — $7.49
+- Seasoned Chicken Skewers, 22.57 oz — $7.49
+- Cattlemen's Ranch Unseasoned Bacon Cheddar Angus Patties, 2 lb Frozen — $11.29
+- Cattlemen's Ranch Smashed Burgers, 2 lb Frozen — $9.99
+- Party Pack Black Angus Beef Patties, 4 lb Frozen — $16.99
+- Kirkwood Seasoned Turkey Burgers, 32 oz Frozen — $6.99
 
 ## Processed Meats
-*(No deals collected this week)*
+- **Parkview Mild or Hot Italian Sausage, 19 oz — $2.99** ⭐
+- **Parkview Cheddar Brats, 16 oz — $2.69** ⭐
+- Parkview Hot Honey or Nashville Hot Chicken Sausage, 12 oz — $2.99
+- Kirkwood Turkey & Cheddar or Jalapeño Smoked Sausage, 13.5 oz — $3.99
+- Hot or Mild Italian Sausage Links, 19 oz — $2.99
+- Beer Bratwurst, 19 oz — $2.99
+- Bratwurst, 19 oz — $2.99
+- Party Pack Bratwurst, 45.6 oz — $7.99
 
 ## Produce & Fruit
-- **Peaches — $1.49/lb (PRICE DROP)** ⭐
-- **Green Grapes — $1.49/lb (PRICE DROP)** ⭐
-- **Blackberries, 6-oz pkg — $1.49 (PRICE DROP)** ⭐
-- **Multicolored Peppers, 3-pack — $2.29 (PRICE DROP)** ⭐
-- **Season's Choice Steamed Frozen Sweet Corn, 12 oz — $0.97** ⭐
-- Whole Seedless Watermelon — $4.49 (PRICE DROP)
-- Lemons (Alex's Lemonade Stand), 2-lb bag — $2.49 (PRICE DROP)
+- **Zucchini — $1.29/lb** ⭐
+- **Red Grapes — $1.39/lb** ⭐
+- **California Nectarines or Plums, 2 lb bag — $1.49/lb** ⭐
+- **Blueberries, 1 pint — $1.99** ⭐
+- **Athena Cantaloupe — $1.99 ea** ⭐
+- Organic Strawberries, 1 lb pkg — $2.99
+- Sweet Corn, 4-pack — $2.39
+- Organic Cherub Grape Tomatoes, 10 oz — $3.49
 
 
 # Winn-Dixie
-*Valid [date range]*
+*Valid June 17–23, 2026*
 
 ## Meat & Seafood
 *(No deals collected this week)*
@@ -179,88 +218,69 @@
 
 
 # Walmart
-*Valid June 10-16, 2026*
+*Valid June 20–22, 2026*
 
 ## Meat & Seafood
-- **Smithfield Fresh Pork Spareribs, 3.7-7.9 lb — $1.97/lb** ⭐ (REPEAT) 🔁
-- **Smithfield Fresh Pork Shoulder Butt Roast, 5.5-10 lb — $2.24/lb** ⭐ (REPEAT) 🔁
-- **Sanderson Farms Boneless Skinless Chicken Breast Fillets with Rib Meat, 2.7-3.3 lb — $3.47/lb** ⭐ (REPEAT) 🔁
-- **Marketside Organic Ground Pork, 1 lb — $5.57** ⭐
-- **Great Value Frozen Raw Colossal P&D Shrimp, 12 oz (16-22 ct/lb) — $7.64** ⭐ (REPEAT) 🔁
-- **Marketside Coho Salmon, Raised Without Antibiotics, Frozen, 1 lb — $8.87** ⭐ (REPEAT) 🔁
-- **Marketside Frozen Raw Bay Scallops, 1 lb — $5.78** ⭐
-- Freshness Guaranteed Fresh Chicken Drumsticks, 5 lb Bag — $4.92 (REPEAT) 🔁
-- Sanderson Farms Fresh Chicken Wings, Family Pack, 4.2-4.7 lb — $2.64/lb (REPEAT) 🔁
-- Sanderson Farms Fresh Boneless Skinless Chicken Breast Fillets, 1.8-2.3 lb — $4.12/lb (REPEAT) 🔁
-- Perdue Harvestland Perfect Portions Fresh Boneless Skinless Chicken Breast, 1.65 lb — $8.24 (REPEAT) 🔁
-- Smithfield Extra Meaty Fresh Pork Back Ribs, 2.1-3.8 lb — $3.38/lb (REPEAT) 🔁
-- Smithfield St. Louis-Style Pork Spareribs, 2.1-5.1 lb — $3.28/lb (REPEAT) 🔁
-- Smithfield Fresh Pork Shoulder Picnic Roast Bone-In, 6.0-12.0 lb — $2.24/lb (REPEAT) 🔁
-- Pork Butt Country Style Ribs Bone-In, 1.75-3.0 lb — $4.54/lb (REPEAT) 🔁
-- Pork Loin Country Style Ribs, Bone-In, 2.3-3.8 lb — $4.54/lb (REPEAT) 🔁
-- Pork Center Cut Loin Chops Thin Boneless, 14 count, 2.16-2.92 lb — $4.43/lb (REPEAT) 🔁
-- Pork Neckbones Bone-In, 3.0-4.7 lb — $2.86/lb (REPEAT) 🔁
-- Smithfield All Natural Fresh Ground Pork, 1.5 lb — $4.82
-- Fresh All Natural Angus Ground Beef Steak Burgers, 85% Lean/15% Fat, 4 Count, 1.33 lb — $8.92 (REPEAT) 🔁
-- Marketside Traditional Pulled Rotisserie Seasoned Chicken, 16 oz — $7.47
-- Ribeye Steak, Choice Angus Beef, Family Pack, 2.26-4.0 lb — $17.97/lb (REPEAT) 🔁
-- New York Strip Steak, Choice Angus Beef, Family Pack, 1.53-3.33 lb — $15.47/lb (REPEAT) 🔁
-- Beef Choice Angus New York Strip Steak Thin, 0.54-1.2 lb — $19.47/lb (REPEAT) 🔁
-- Thin Ribeye Steak Choice Angus Beef, 2 Per Tray, 0.43-1.85 lb — $20.97/lb (REPEAT) 🔁
-- Marketside Skinless Atlantic Salmon Fillet, Fresh Never Frozen, 0.95-1.2 lb — $10.64/lb (REPEAT) 🔁
-- Marketside Skin-On Atlantic Salmon Fillets, 0.70-1.25 lb — $9.54/lb (REPEAT) 🔁
-- Great Value Frozen Raw Super Colossal Shell-on Shrimp, 16 oz (13-15 ct/lb) — $9.97 (REPEAT) 🔁
-- Great Value Frozen Cooked Colossal P&D Shrimp, 12 oz — $7.64 (REPEAT) 🔁
-- Great Value Frozen Cooked Extra Large Easy Peel Shrimp, 2 lb — $17.62
-- Great Value Frozen Unbreaded Catfish Nuggets, 2 lb — $7.97
+- **Sanderson Farms Fresh Chicken Wings, Family Pack, 4.2-4.7 lb — $2.64/lb** ⭐
+- Freshness Guaranteed Fresh Chicken Drumsticks, 5 lb Bag — $0.98/lb (REPEAT) 🔁
+- Sanderson Farms Fresh Boneless Skinless Chicken Breast Fillets, 1.8-2.3 lb — $4.12/lb
+- Sanderson Farms Boneless Skinless Chicken Breast Fillets with Rib Meat, 2.7-3.3 lb — $3.47/lb
+- Perdue Harvestland Perfect Portions Boneless Skinless Chicken Breast, 1.65 lb — $8.24 (REPEAT) 🔁
+- Smithfield Extra Meaty Fresh Pork Back Ribs, 2.1-3.8 lb — $3.38/lb
+- Smithfield Fresh Pork Spareribs, 3.7-7.9 lb — $1.97/lb
+- Smithfield St. Louis-Style Pork Spareribs, Fresh, 2.1-5.1 lb — $3.28/lb
+- Smithfield Fresh Pork Shoulder Butt Roast, 5.5-10 lb — $2.24/lb
+- Smithfield Fresh Pork Shoulder Picnic Roast Bone-In, 6.0-12.0 lb — $2.24/lb
+- Smithfield All Natural Fresh Ground Pork, 1.5 lb — $4.82 (REPEAT) 🔁
+- Pork Loin Country Style Ribs Bone-In, 2.3-3.8 lb — $4.54/lb
+- Pork Center Cut Loin Chops Thin Boneless, 14 count, 2.16-2.92 lb — $4.43/lb
+- Pork Butt Country Style Ribs Bone-In, 1.75-3.0 lb — $4.54/lb
+- Pork Neckbones Bone-In, 3.0-4.7 lb — $2.86/lb
+- Marketside Organic Ground Pork, 1 lb — $5.46
+- Ribeye Steak, Choice Angus Beef, Family Pack, 2.26-4.0 lb — $17.97/lb
+- **New York Strip Steak, Choice Angus Beef, Family Pack, 1.53-3.33 lb — $15.47/lb** ⭐
+- Thin Ribeye Steak, Choice Angus Beef, 0.43-1.85 lb — $20.97/lb
+- Beef Choice Angus New York Strip Steak Thin, 0.54-1.2 lb — $19.47/lb
+- Fresh All Natural Angus Ground Beef Steak Burgers, 85% Lean, 4 Count, 1.33 lb — $8.92 (REPEAT) 🔁
+- 85% Lean Angus Ground Beef Steak Burgers, 12 Count, 4 lb Fresh — $24.97 ($6.24/lb)
+- 80% Lean Ground Beef Chuck Patties, 12 Count, 4 lb Fresh — $23.93 ($5.98/lb)
+- **Marketside Coho Salmon Fillet, 1 lb Bag Frozen — $8.87/lb** ⭐ (REPEAT) 🔁
+- Marketside Skinless Atlantic Salmon Fillet, Fresh Never Frozen, 0.95-1.2 lb — $10.64/lb
+- Marketside Skin-On Atlantic Salmon Fillets, 0.70-1.25 lb — $9.54/lb
+- **Marketside Frozen Raw Ahi Tuna Steaks, 1 lb — $6.67/lb** ⭐
+- Marketside Frozen Snapper Portions, 12 oz — $9.84
+- **Marketside Frozen Raw Bay Scallops, 1 lb — $5.78/lb** ⭐ (REPEAT) 🔁
+- **Great Value Frozen Raw Colossal P&D Shrimp, 12 oz — $7.64** ⭐ (REPEAT) 🔁
+- Great Value Frozen Raw Super Colossal Shell-on Shrimp, 16 oz — $9.97 (REPEAT) 🔁
+- Great Value Frozen Cooked Colossal Shrimp, 12 oz — $7.64 (REPEAT) 🔁
+- Great Value Frozen Cooked Extra Large Easy Peel Shrimp, 2 lb — $17.62 (REPEAT) 🔁
+- Bernard's Seafood Frozen Cleaned & Peeled Crawfish Tail Meat, 12 oz — $7.96
+- **Great Value Frozen Unbreaded Catfish Nuggets, 2 lb — $7.97 ($3.99/lb)** ⭐ (REPEAT) 🔁
+- Marketside Wild Caught Fully Cooked Dungeness Crab Legs, 16 oz Frozen — $29.94 (REPEAT) 🔁
 - Sea Best Frozen Pink Salmon Skinless, 2 lb — $13.47 (REPEAT) 🔁
-- Marketside Wild Caught Fully Cooked Dungeness Crab Legs, 16 oz, Frozen — $29.94 (REPEAT) 🔁
-- Starkist Solid White Albacore Tuna In Water, Wild Caught, 5 oz, 4 Cans — $4.97
-- StarKist Selects Chunk White Albacore Tuna in Water, Wild Caught, 4.5 oz Can — $1.94
-- TGI Fridays Buffalo Style Chicken Wings, Frozen, 25.5 oz — $9.87
-- TGI Fridays Honey BBQ Boneless Chicken Bites, Frozen, 15 oz — $6.47
-- Marie Callender's Meat Loaf & Gravy, Frozen, 12.4 oz — $2.87
-- Marie Callender's Country Fried Chicken and Gravy, Frozen, 13.1 oz — $2.87
-- Birds Eye Voila! Alfredo Chicken Skillet Meals, Frozen, 21 oz — $3.87
-- Loma Linda Big Franks, 15 oz, Vegan — $5.97
 
 ## Processed Meats
-- **Gwaltney Hardwood Smoked Bacon, 12 oz, Nitrate-Free — $3.97** ⭐ (REPEAT) 🔁
 - **Butterball Fully Cooked Natural Hardwood Smoked Turkey Sausage, 13 oz — $2.97** ⭐ (REPEAT) 🔁
 - **Zummo's Cajun Style Boudin Pork Sausage, 36 oz — $8.92** ⭐ (REPEAT) 🔁
-- Marketside Uncured Thick Cut Bacon, 12 oz — $4.44 (REPEAT) 🔁
-- Marketside Black Forest Seasoned Thick Cut Bacon, 12 oz — $4.44 (REPEAT) 🔁
-- Marketside Fully Cooked Gluten-Free Chicken Apple Sausage, 12 oz — $4.97 (REPEAT) 🔁
-- Marketside Chipotle and Monterey Jack Cheese Chicken Sausage, 12 oz — $4.97
-- Hillshire Farm Lit'l Smokies Smoked Sausage Links, 14 oz — $3.86
-- Hillshire Farm Beef Lit'l Smokies Smoked Sausage Links, 12 oz — $3.86
-- Jimmy Dean Fully Cooked Original Pork Sausage Links, 9.6 oz — $4.92
-- Jimmy Dean Fully Cooked Spicy Pork Sausage Patties, 9.6 oz — $4.92
-- Bar-S Classic Fully Cooked Jumbo Franks Hot Dogs, 16 oz — $1.77
-- Oscar Mayer Bun-Length Wieners Hot Dogs, 8 Count — $2.84
+- Hormel Black Label Original Bacon, 16 oz — $5.97
+- Hormel Black Label Thick Cut Bacon, 16 oz — $5.97
+- Oscar Mayer Naturally Hardwood Smoked Bacon, 16 oz — $6.48
 
 ## Produce & Fruit
 - **Fresh Sweet Corn on the Cob, Each — $0.33** ⭐ (REPEAT) 🔁
-- **Fresh Grape Tomato, 10 oz — $1.99** ⭐
 - **Fresh Green Whole Asparagus Bunch — $2.97** ⭐ (REPEAT) 🔁
-- **Fresh Blueberries, 1 Pint — $2.67** ⭐
-- **Fresh Yellow Peach, Each — $0.76** ⭐
-- Fresh Banana, Each — $0.13
-- Fresh Yellow Squash, Each — $1.12 (REPEAT) 🔁
-- Fresh Pineapple, Each — $1.98
+- **Fresh Yellow Squash, Each — $0.76** ⭐
+- **Fresh Red Cherries, 2.25 lb Bag — $8.93 ($3.97/lb)** ⭐
+- **Fresh Seedless Watermelon, Each — $4.67** ⭐ (REPEAT) 🔁
+- Fresh Yellow Peach, Each — $0.76 (REPEAT) 🔁
+- Fresh English Cucumber, Each — $0.87
+- Fresh Blueberries, 1 Pint Container — $2.67 (REPEAT) 🔁
+- Fresh Gala Apples, 3 lb Bag — $3.24 ($1.08/lb) (REPEAT) 🔁
+- Fresh Pineapple, Each — $1.98 (REPEAT) 🔁
 - Fresh Grapefruit, Each — $1.24 (REPEAT) 🔁
-- Fresh Navel Orange, Each — $0.77 (REPEAT) 🔁
-- Fresh Envy Apple, Each — $0.94
-- Fresh Gala Apples, 3 lb Bag — $3.24 (REPEAT) 🔁
-- Fresh Seedless Watermelon, Each — $4.67
-- Fresh Mini Seedless Watermelon, Each — $3.88
-- Fresh Green Seedless Grapes, 2 lb — $4.97
-- Fresh Blueberries, 18 oz — $4.28
-- Fresh Organic Blueberries, Dry Pint — $4.46
-- Marketside Chopped Romaine Lettuce Mix, 9 oz — $2.97 (REPEAT) 🔁
-- Marketside Fresh Cut Fruit Duo, Strawberry and Blueberry, 10 oz — $4.15
-- Fresh Sweet Corn on the Cob, 4 Count — $2.97
-- Green Giant Extra Sweet Corn on The Cob, Frozen, 12 Count — $4.43
+- Fresh Sweet Corn on the Cob, 4 Count — $2.97 (REPEAT) 🔁
+- Fresh Mini Seedless Watermelon, Each — $3.88 (REPEAT) 🔁
+- Fresh Black Seedless Grapes, 2.25 lb Bag — $4.43 (~$1.97/lb)
 
 
 # Dollar General
