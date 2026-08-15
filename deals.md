@@ -251,7 +251,7 @@
 - **Smithfield Fresh Pork Spareribs, 3.7-8 lb — $1.97/lb** ⭐ (REPEAT) 🔁
 - **Freshness Guaranteed Chicken Breast Tenderloins, 1.0-4.2 lb tray — $3.68/lb** ⭐
 - **Pork Center Cut Loin Chops, bone-in, 6 ct — $3.77/lb** ⭐
-- **Great Value Tilapia Skinless & Boneless Fillets, 4 lb, frozen — $15.72** ⭐ ($3.94/lb)
+- **Great Value Frozen Tilapia Skinless & Boneless Fillets, 4 lb — $3.93/lb** ⭐ ($15.72/pkg) (REPEAT) 🔁
 - **73% Lean / 27% Fat Ground Beef, 10 lb roll — $4.44/lb** ⭐ (REPEAT) 🔁
 - **Marketside Frozen Raw Ahi Tuna Steaks, 1 lb — $6.67** ⭐ ($6.67/lb)
 - Sanderson Farms Fresh Chicken Wings, family pack, 4.2-4.7 lb — $2.64/lb
