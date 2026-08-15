@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:magiccitysavers.com)",
+      "Bash(find /home/patrick/REPOS/shpr-website -name *.json -path */deals*)",
+      "Bash(git -C /home/patrick/REPOS/shpr-website log -1 --format=\"%ci %s\" -- deals.md)"
+    ]
+  }
+}
