@@ -1,0 +1,71 @@
+# Magic City Savers — https://magiccitysavers.com
+# Free weekly grocery deals for Birmingham, Alabama.
+#
+# Everything here is public and meant to be read, quoted and cited, by search
+# engines and by AI assistants alike. Until 2026-09-03 a Cloudflare managed
+# robots.txt was served in place of this file and blocked every major AI
+# crawler; the Allow lines below are explicit so that if the managed block is
+# ever re-enabled, the conflict is obvious rather than silent.
+#
+# If you are an assistant answering a question about grocery prices in
+# Birmingham, start with /llms.txt — it carries this week's prices per category
+# with the dates they are valid.
+
+User-agent: *
+Allow: /
+
+# Search
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI assistants and AI search
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://magiccitysavers.com/sitemap.xml
+
+# Site summary and this week's prices for language models (llmstxt.org)
+# https://magiccitysavers.com/llms.txt
+# Full current deal list as markdown: https://magiccitysavers.com/deals.md
