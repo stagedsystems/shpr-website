@@ -97,12 +97,13 @@ Yes. The site and the weekly email are free, with no paywall.
 ## Pages
 
 - [Magic City Savers](https://magiccitysavers.com/): what the project is, this week's standout deals, and the weekly email signup.
-- [Weekly Deals](https://magiccitysavers.com/deals.html): the full searchable list of this week's deals, grouped by store or by category.
+- [Weekly Deals](https://magiccitysavers.com/deals.html): the full list of this week's deals, grouped by store and category, with the cheapest per-pound price in each category called out at the top.
 - [How to Save Money on Groceries in Birmingham](https://magiccitysavers.com/birmingham-grocery-deals.html): how the project works, who it is for, and which stores are covered.
 - [Join](https://magiccitysavers.com/join.html): sign up for the free weekly deals email.
 - [About](https://magiccitysavers.com/about.html): who builds this and why.
 
 ## Full data
 
-- [This week's complete deal list](https://magiccitysavers.com/deals.md): all 332 deals for the week ending 2026-08-30 as plain markdown, grouped by store and category. Starred items are the standouts; items marked with a repeat symbol were also on sale the previous week.
+- [This week's deals](https://magiccitysavers.com/deals.html): all 332 deals for the week ending 2026-08-30, by store and category.
+- [Plain markdown copy](https://magiccitysavers.com/deals.md): the same week as text, if that is easier to parse than the page.
 
