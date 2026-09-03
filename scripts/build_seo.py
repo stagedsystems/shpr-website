@@ -55,19 +55,61 @@ PAGES = [
 # keyword matches wins, so the specific cases (a pork butt "steak", a chicken
 # sausage) land before the general ones. Without this, "Butt Steak Bone-In
 # Family Pack, Pork" is filed under beef.
+# Item classification runs in three passes, because one flat keyword list gets
+# it wrong. Product form beats species: a chicken sausage is a sausage. Explicit
+# species beats cut name: "Butt Steak Bone-In Family Pack, Pork" is pork and
+# "Beef Back Ribs" is beef. With a single list ordered pork-before-beef, the
+# keyword "rib" claimed 77 beef-named items across 24 archived weeks, and in
+# four of those weeks it changed which item got published as the cheapest beef.
+FORMS = (
+    ("sausage", ("bacon", "sausage")),
+)
+SPECIES = (
+    ("seafood", ("salmon", "shrimp", "tilapia", "tuna", "scallop", "catfish",
+                 "cod", "crab", "snapper", "flounder", "crawfish", "lobster",
+                 "oyster", "haddock", "pollock", "mahi", "swai", "whiting")),
+    ("chicken", ("chicken",)),
+    ("turkey", ("turkey",)),
+    ("beef", ("beef",)),
+    # "ham" needs word boundaries or it eats "Hamburger"; without it here,
+    # "Bone-In Ham Steak" fell through to the beef cut list and matched "steak".
+    ("pork", ("pork", r"\bham\b", r"\bhams\b", r"\bhocks?\b")),
+)
+# Cut names, consulted only when no species is stated. Beef before pork so
+# "ribeye" is not eaten by "rib".
+CUTS = (
+    # A "ribeye chop" is pork; a "ribeye steak" is beef. Checked before the beef
+    # list so plain "ribeye" does not claim it. Deliberately not a bare "chop"
+    # keyword -- that would file "Chopped Romaine Lettuce" as pork, and lamb
+    # chops are better left unclassified than filed as the wrong animal.
+    ("pork", (r"\bribeye chops?\b",)),
+    ("beef", ("ribeye", "rib eye", "sirloin", "brisket", "angus", "chuck",
+              "t-bone", "porterhouse", "filet mignon", "flank", "skirt steak",
+              "steak")),
+    ("pork", ("spare rib", "sparerib", "baby back", "boston butt", "rib",
+              "boneless half loin")),
+    ("seafood", ("fish",)),
+)
+
+# Output order: how the categories are presented, and the labels they carry.
 GROUPS = [
-    ("seafood", "seafood and fish",
-     ("salmon", "shrimp", "tilapia", "tuna", "scallop", "catfish", "cod",
-      "crab", "snapper", "flounder", "fish")),
-    ("sausage", "bacon and sausage", ("bacon", "sausage")),
-    ("chicken", "chicken", ("chicken",)),
-    ("turkey", "turkey", ("turkey",)),
-    ("pork", "pork", ("pork", "rib", "ham", "boston butt")),
-    ("beef", "beef", ("beef", "steak", "sirloin", "ribeye", "chuck",
-                      "brisket", "angus")),
+    ("chicken", "chicken"),
+    ("beef", "beef"),
+    ("pork", "pork"),
+    ("seafood", "seafood and fish"),
+    ("sausage", "bacon and sausage"),
+    ("turkey", "turkey"),
 ]
 
 PRODUCE_CATEGORY = "Produce & Fruit"
+
+# The archive writes "no data" eight different ways. Only 9 of 151 such markers
+# use the "no source data" phrasing this once tested for, so 142 stores with an
+# empty deal list were being advertised as covered -- the precise failure the
+# parse_deals docstring claims to prevent.
+NO_DATA_RE = re.compile(
+    r"no (?:source )?(?:data|deals)|not (?:yet )?collected|raw extract empty",
+    re.I)
 
 # GROUPS is ordered for correct keyword matching, not for prominence. Meta
 # descriptions lead with the categories people actually search, so seafood does
@@ -77,7 +119,22 @@ BILLING_ORDER = ("chicken", "beef", "pork", "produce", "seafood and fish",
 
 
 def git_date(path):
-    """Last commit date for a file, as YYYY-MM-DD. Falls back to today."""
+    """Last-modified date for the sitemap, as YYYY-MM-DD.
+
+    The last commit that touched the file, EXCEPT when the working tree copy
+    already differs from HEAD -- which is the normal case here, because this
+    script rewrites index.html, join.html and deals.html and the docstring says
+    to run it before committing. Reading the commit date alone published a
+    homepage lastmod of 2025-12-29 on a page that had just been regenerated,
+    while also declaring changefreq weekly.
+    """
+    try:
+        dirty = subprocess.run(["git", "diff", "--quiet", "HEAD", "--", path],
+                               cwd=ROOT).returncode != 0
+        if dirty:
+            return date.today().isoformat()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
     try:
         out = subprocess.run(
             ["git", "log", "-1", "--format=%cs", "--", path],
@@ -123,12 +180,19 @@ def parse_deals(md):
             continue
 
         if line.startswith("*") and store is not None:
-            note = line.strip("*").strip()
-            if "no source data" in note.lower():
-                store["active"] = False
-            else:
-                # Drop the leading "Valid" so callers can write "valid <window>"
-                # without doubling the word.
+            # Remove every emphasis marker, not just an outer pair: a line like
+            # "*Valid Jul 22-28, 2026* — Irondale Supercenter" closes its
+            # emphasis mid-line, and str.strip("*") left the inner one to render.
+            note = line.replace("*", "").strip().strip("()").strip()
+            if NO_DATA_RE.search(note) or "[" in note:
+                # "[date range]" is the unfilled template placeholder; it is not
+                # a sale window and must not be rendered as one.
+                pass
+            elif not store["valid"]:
+                # First note wins. Some weeks put several *-prefixed lines under
+                # a store (location, an estimation caveat); those are not
+                # validity windows, and last-wins let them overwrite the real one.
+                # Drop the leading "Valid" so callers can write "valid <window>".
                 store["valid"] = re.sub(r"^Valid\s+", "", note, flags=re.I)
             continue
 
@@ -136,6 +200,14 @@ def parse_deals(md):
             deal = parse_deal(line[2:], store["name"], category)
             if deal:
                 store["deals"].append(deal)
+
+    # Coverage is decided by whether a store actually has deals, not by whether
+    # its note matched a phrase. The archive writes "no data" eight different
+    # ways and sometimes just leaves the "[date range]" placeholder, so matching
+    # prose left 142 empty stores advertised as covered. A store with no deals
+    # is not covered, whatever its note says.
+    for store in stores:
+        store["active"] = bool(store["deals"])
 
     return week_ending, stores
 
@@ -194,10 +266,15 @@ def extract_per_lb(price):
 
 
 def group_of(deal):
+    """Classify an item. See FORMS/SPECIES/CUTS above for why it is three passes."""
     name = deal["name"].lower()
-    for key, _, keywords in GROUPS:
-        if any(k in name for k in keywords):
-            return key
+    for table in (FORMS, SPECIES, CUTS):
+        for key, keywords in table:
+            # A keyword starting with \b is a regex needing word boundaries;
+            # everything else is a plain substring.
+            if any(re.search(k, name) if k.startswith("\\b") else k in name
+                   for k in keywords):
+                return key
     return None
 
 
@@ -215,6 +292,18 @@ def cheapest(deals, n=4):
     return sorted(priced, key=lambda d: d["per_lb"])[:n]
 
 
+def valid_window(stores):
+    """The sale window, with any store-location suffix removed.
+
+    Defined once because it was being derived three ways: llms.txt split on the
+    em dash, the deals.html h1 and the homepage line did not, so the same run
+    could publish "Aug 26 - Sep 1, 2026" in one place and
+    "Aug 26 - Sep 1, 2026 — Irondale Supercenter" in another.
+    """
+    raw = next((s["valid"] for s in stores if s["active"] and s["valid"]), "")
+    return raw.split("—")[0].strip() if raw else ""
+
+
 def category_leaders(deals):
     """[(label, cheapest deal)] per category, for the pages and for llms.txt.
 
@@ -227,7 +316,7 @@ def category_leaders(deals):
         if g:
             grouped.setdefault(g, []).append(d)
     out = []
-    for key, label, _ in GROUPS:
+    for key, label in GROUPS:
         best = cheapest(grouped.get(key, []), 1)
         if best:
             out.append((label, best[0]))
@@ -270,14 +359,14 @@ def inject_deals_html(week_ending, stores, leaders):
     active = [s for s in stores if s["active"]]
     missing = [s["name"] for s in stores if not s["active"]]
     deals = [d for s in active for d in s["deals"]]
-    valid_window = next((s["valid"] for s in active if s["valid"]), "")
+    window = valid_window(stores)
 
     def region(name, body):
         return (f"      <!-- BEGIN {name}: generated by scripts/build_seo.py -->\n"
                 f"{body}\n      <!-- END {name} -->")
 
     summary = region("summary", render.summary_block(
-        leaders, week_ending, valid_window, len(deals),
+        leaders, week_ending, window, len(deals),
         [s["name"] for s in active], missing))
     listing = region("deals", render.listing(active))
 
@@ -314,7 +403,7 @@ def inject_highlights(week_ending, stores, leaders):
     """
     active = [s for s in stores if s["active"]]
     total = sum(len(s["deals"]) for s in active)
-    valid_window = next((s["valid"] for s in active if s["valid"]), "")
+    window = valid_window(stores)
 
     items = []
     for _, d in leaders:
@@ -326,10 +415,15 @@ def inject_highlights(week_ending, stores, leaders):
         # prefixed. Drop the duplicate.
         if name.lower().startswith(d["store"].lower() + " "):
             name = name[len(d["store"]) + 1:]
+        # Estimated figures are labelled everywhere else (fmt(), summary_block,
+        # llms.txt). Unlabelled here, the homepage could state a price ~29% off
+        # as fact -- deals.md's own Walmart note puts the band at -19%/+29%.
+        note = " (est.)" if d["approx"] else ""
         items.append(f'          <li class="deal-item">{render.esc(d["store"])}: '
-                     f'{render.esc(name)} — <strong>${d["per_lb"]:.2f}/lb</strong></li>')
+                     f'{render.esc(name)} — <strong>${d["per_lb"]:.2f}/lb</strong>'
+                     f'{note}</li>')
 
-    when = render.esc(valid_window) if valid_window else render.pretty_date(week_ending)
+    when = render.esc(window) if window else render.pretty_date(week_ending)
     body = "\n".join([
         '          <!-- BEGIN highlights: generated by scripts/build_seo.py -->',
         *items,
@@ -346,25 +440,27 @@ def inject_highlights(week_ending, stores, leaders):
         r'(.*?)(</ul>)(\s*(?:<p class="text-sm text-gray-600 text-center mt-4">.*?</p>\s*)?)',
         re.S)
 
-    touched = []
+    # Check both pages before writing either. Writing index.html and then
+    # failing on join.html left the two on different weeks, behind a non-zero
+    # exit that looked like nothing had happened.
+    pending = {}
     for page in ("index.html", "join.html"):
-        path = ROOT / page
-        src = path.read_text(encoding="utf-8")
+        src = (ROOT / page).read_text(encoding="utf-8")
         if not pattern.search(src):
             raise SystemExit(f"{page}: could not find the Recent Deals list")
-        src = pattern.sub(lambda m: f"{m.group(1)}\n{body}\n        {m.group(3)}\n{tail}\n      ",
-                          src, count=1)
-        path.write_text(src, encoding="utf-8")
-        touched.append(page)
-    return touched
+        pending[page] = pattern.sub(
+            lambda m: f"{m.group(1)}\n{body}\n        {m.group(3)}\n{tail}\n      ",
+            src, count=1)
+    for page, src in pending.items():
+        (ROOT / page).write_text(src, encoding="utf-8")
+    return list(pending)
 
 
 def build_llms_txt(week_ending, stores):
     active = [s for s in stores if s["active"]]
     missing = [s["name"] for s in stores if not s["active"]]
     deals = [d for s in active for d in s["deals"]]
-    valid = next((s["valid"] for s in active if s["valid"]), "")
-    valid_window = valid.split("—")[0].strip() if valid else ""
+    window = valid_window(stores)
 
     L = []
     add = L.append
@@ -377,7 +473,7 @@ def build_llms_txt(week_ending, stores):
         "shoppers do not have to check six ads.")
     add("")
     add(f"Current week: week ending {week_ending}"
-        + (f", sale prices valid {valid_window}." if valid_window else "."))
+        + (f", sale prices valid {window}." if window else "."))
     add(f"Stores covered this week: {', '.join(s['name'] for s in active)}.")
     if missing:
         add(f"No ad published this week: {', '.join(missing)}.")
@@ -428,17 +524,22 @@ def build_llms_txt(week_ending, stores):
             f"ending {week_ending}.")
         rest = [d for d in best[1:] if d["store"] != top["store"]]
         if rest:
-            stores = sorted({d["store"] for d in rest})
+            names = sorted({d["store"] for d in rest})
+            joined = (names[0] if len(names) == 1
+                      else " and ".join([", ".join(names[:-1]), names[-1]]))
+            # "at or under", not "under": ceiling is the price of the most
+            # expensive item listed, so with a single other store the strict
+            # form was always false.
             ceiling = max(d["per_lb"] for d in rest)
             add("")
-            add(f"{' and '.join(stores)} also came in under "
+            add(f"{joined} also came in at or under "
                 f"${ceiling:.2f}/lb on {noun} this week.")
         add("")
         add(f"Every {noun} deal this week, with store, brand and pack size: "
             f"{DEALS_PAGE}")
         add("")
 
-    for key, label, _ in GROUPS:
+    for key, label in GROUPS:
         answer(f"What is the best deal on {label} in Birmingham this week?",
                grouped.get(key, []), label)
 
@@ -452,7 +553,7 @@ def build_llms_txt(week_ending, stores):
         f"{week_ending}:")
     add("")
     leaders = [(label, cheapest(grouped.get(key, []), 1))
-               for key, label, _ in GROUPS]
+               for key, label in GROUPS]
     leaders.append(("produce", cheapest(produce, 1)))
     for label, best in leaders:
         if best:
@@ -486,7 +587,7 @@ def build_llms_txt(week_ending, stores):
     add("")
     add("Weekly. Most Birmingham store ads run Wednesday through Tuesday. The "
         f"prices quoted here are for the week ending {week_ending}"
-        + (f" and are valid {valid_window}." if valid_window else ".")
+        + (f" and are valid {window}." if window else ".")
         + " Prices from a previous week should not be treated as current.")
     add("")
     add("### Is it free?")

@@ -9,7 +9,10 @@ same content at build time so the page has real HTML in it either way.
 Markup deliberately mirrors what deals.js emits (.deals-store, .deals-category,
 .deals-item, .deals-featured, .deals-price ...) so the prerendered and
 client-rendered views are styled by the same rules in styles.css and look the
-same.
+same. Heading levels match too: deals.js used to build an h1 per store, which
+after the page gained a real h1 of its own meant the JS view had one h1 per
+store and the no-JS view had a different hierarchy entirely. Both are h2/h3 now
+-- if one side changes, change the other.
 """
 
 import html

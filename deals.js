@@ -91,9 +91,9 @@
 
     let html = '';
     for (const store of Object.keys(grouped).sort()) {
-      html += `<h1 class="deals-store">${store}</h1>`;
+      html += `<h2 class="deals-store">${store}</h2>`;
       for (const category of Object.keys(grouped[store]).sort()) {
-        html += `<h2 class="deals-category">${category}</h2>`;
+        html += `<h3 class="deals-category">${category}</h3>`;
         html += '<ul class="deals-list">';
         for (const deal of grouped[store][category]) {
           html += renderDealItem(deal);
@@ -114,9 +114,9 @@
 
     let html = '';
     for (const category of Object.keys(grouped).sort()) {
-      html += `<h1 class="deals-store">${category}</h1>`;
+      html += `<h2 class="deals-store">${category}</h2>`;
       for (const store of Object.keys(grouped[category]).sort()) {
-        html += `<h2 class="deals-category">${store}</h2>`;
+        html += `<h3 class="deals-category">${store}</h3>`;
         html += '<ul class="deals-list">';
         for (const deal of grouped[category][store]) {
           html += renderDealItem(deal);
