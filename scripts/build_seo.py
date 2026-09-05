@@ -70,7 +70,9 @@ SPECIES = (
                  "oyster", "haddock", "pollock", "mahi", "swai", "whiting")),
     ("chicken", ("chicken",)),
     ("turkey", ("turkey",)),
-    ("beef", ("beef",)),
+    # "beef" needs word boundaries or it eats "Beefsteak Tomato", which was
+    # published as the cheapest beef deal for week ending 2026-09-06.
+    ("beef", (r"\bbeef\b",)),
     # "ham" needs word boundaries or it eats "Hamburger"; without it here,
     # "Bone-In Ham Steak" fell through to the beef cut list and matched "steak".
     ("pork", ("pork", r"\bham\b", r"\bhams\b", r"\bhocks?\b")),
@@ -83,9 +85,11 @@ CUTS = (
     # keyword -- that would file "Chopped Romaine Lettuce" as pork, and lamb
     # chops are better left unclassified than filed as the wrong animal.
     ("pork", (r"\bribeye chops?\b",)),
+    # "steak" is bounded for the same reason as "beef" above: unbounded, it
+    # matched "Beefsteak Tomato" here even once the species pass stopped doing so.
     ("beef", ("ribeye", "rib eye", "sirloin", "brisket", "angus", "chuck",
               "t-bone", "porterhouse", "filet mignon", "flank", "skirt steak",
-              "steak")),
+              "tri-tip", "tri tip", r"\bsteaks?\b")),
     ("pork", ("spare rib", "sparerib", "baby back", "boston butt", "rib",
               "boneless half loin")),
     ("seafood", ("fish",)),
