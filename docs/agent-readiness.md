@@ -42,13 +42,11 @@ files and cannot be confused for anything else.
 
 ## The Cloudflare rules this site depends on
 
-**Transform Rule — response headers on `.md`** (`http_response_headers_transform`):
+**Rule 1 — noindex on every Markdown response**
+(`http_response_headers_transform`):
 
     Expression:  (http.request.uri.path.extension eq "md")
     Set static:  X-Robots-Tag = "noindex, follow"
-    Set dynamic: Link = concat("<https://magiccitysavers.com",
-                               regex_replace(http.request.uri.path, "\.md$", ".html"),
-                               ">; rel=\"canonical\"")
 
 `noindex, follow` is the whole reason the twins are safe to publish. Each `.md`
 is a duplicate of an HTML page; without it you hand Google four extra copies of
@@ -56,16 +54,46 @@ the site and invite it to pick the wrong one. `follow` still lets the links in
 them be crawled. The twins are also kept **out of `sitemap.xml`** for the same
 reason — `build_seo.py` builds the sitemap from `PAGES`, which is HTML only.
 
+It applies to *every* `.md`, deliberately — the weekly archive under `/deals/`
+and the repo files GitHub Pages incidentally serves are all duplicates or
+working notes, and none of them should be indexed either.
+
+**Rule 2 — canonical, only where an HTML twin actually exists.**
+⚠️ **Not deployed.** The dashboard rejected it on this free zone. Rule 1 already
+removes the duplicate-content risk on its own, so this is polish, not a
+prerequisite — but if you retry it, two things cost time:
+
+- Cloudflare's expression syntax treats `\` as a string escape, so a regex
+  `\.md$` must be written `"\\.md$"`. Writing `"\.md$"` fails with
+  *expected ", xHH or OOO after \\*.
+- With that fixed the form reported no error and still did not save, which
+  points at `regex_replace()` being unavailable on the free plan rather than at
+  the syntax. Confirm that before spending more time on the expression.
+
+    Expression:  (http.request.uri.path in {"/index.md" "/about.md" "/join.md"
+                  "/birmingham-grocery-deals.md" "/deals.md"})
+    Set dynamic: Link = concat("<https://magiccitysavers.com",
+                               regex_replace(http.request.uri.path, "\.md$", ".html"),
+                               ">; rel=\"canonical\"")
+
+The explicit path list is the point. Deriving the canonical from the path for
+*all* `.md` looks tidier and emits `/-> /README.html` and
+`/deals/2026-09-06/deals.html` — canonicals pointing at URLs that 404. A
+canonical to a dead page is worse than none. Add a path here when a page gains a
+twin.
+
 The canonical is emitted **only on Markdown responses**. Do not generalise it to
 HTML: the HTML pages carry their own `<link rel="canonical">` (injected by
 `build_seo.py`), and a header derived from the request path would disagree with
-them on any URL that gets rewritten before it is served.
+them on any URL rewritten before it is served.
 
 Note `/index.md` canonicalises to `/index.html`, which redirects to `/`. If that
 ever matters, special-case it; it is not worth a rule today.
 
-**Transform Rule — llms.txt discovery on HTML** (the Mintlify convention, and
-what satisfies Cloudflare's Level 2 "Link Headers" check):
+**Rule 3 — llms.txt discovery on HTML** (the Mintlify convention, and what
+satisfies Cloudflare's Level 2 "Link Headers" check). Add this one **after** the
+deploy, not before: it advertises `/llms-full.txt`, and until that file is live
+the header points at a 404.
 
     Expression:  (http.response.content_type.media_type eq "text/html")
     Set static:  Link = <https://magiccitysavers.com/llms.txt>; rel="llms-txt",
@@ -127,9 +155,21 @@ any Cloudflare rule change:
       | grep -iE 'content-type|link|cf-cache-status'
     curl -s  https://magiccitysavers.com/robots.txt | grep -i content-signal
 
-Expected: `.md` returns `text/markdown`, `noindex, follow`, and a canonical
-`Link` to the `.html`; HTML returns `text/html`, the two `llms-txt` links, and
-**no** `X-Robots-Tag`.
+Expected: `.md` returns `text/markdown` and `noindex, follow` (plus a canonical
+`Link` if Rule 2 ever deploys); HTML returns `text/html`, the two `llms-txt`
+links once Rule 3 is added, and **no** `X-Robots-Tag`.
+
+## DNS note
+
+The AI Crawl Control → Signals page lists every hostname in the zone and probes
+`robots.txt` on each, so the Microsoft 365 service records — `autodiscover`,
+`lyncdiscover`, `sip`, `enterpriseregistration`, `enterpriseenrollment` — show
+521/526/530 there. That is expected and not a fault: they are already DNS-only,
+and there is no web server behind them because there is not meant to be one.
+Do not "fix" them.
+
+`_domainconnect` was the real exception: it was proxied, which broke GoDaddy's
+DomainConnect discovery (530 Origin DNS Error). Set to DNS-only on 2026-09-08.
 
 `robots.txt` is served `cache-control: max-age=14400`. After changing it, purge
 that URL at the edge or the old copy stays live for four hours — a change can be
