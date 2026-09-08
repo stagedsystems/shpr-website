@@ -90,10 +90,17 @@ them on any URL rewritten before it is served.
 Note `/index.md` canonicalises to `/index.html`, which redirects to `/`. If that
 ever matters, special-case it; it is not worth a rule today.
 
-**Rule 3 — llms.txt discovery on HTML** (the Mintlify convention, and what
-satisfies Cloudflare's Level 2 "Link Headers" check). Add this one **after** the
-deploy, not before: it advertises `/llms-full.txt`, and until that file is live
-the header points at a 404.
+**Rule 3 — llms.txt discovery on HTML** (the Mintlify convention). Deployed
+2026-09-08 and verified live on every HTML response.
+
+It does **not** satisfy Cloudflare's Level 2 "Link Headers" check, contrary to
+what that check's name suggests. After deploying it the scan reports *"Link
+headers present but no agent-useful relation types found"*, and the check's own
+readiness text explains why: it looks for *"where your structured product info
+and catalog are located"*. It wants commerce relation types. `llms-txt` and
+`llms-full-txt` are not what it is scoring, so Level 2 stays 0/3 and that is the
+correct outcome for this site, not a defect. The rule is still worth having —
+it is the convention real agents follow.
 
     Expression:  (http.response.content_type.media_type eq "text/html")
     Set static:  Link = <https://magiccitysavers.com/llms.txt>; rel="llms-txt",
@@ -141,8 +148,14 @@ the text into a real block element or add its class to `CHROME_CLASSES`.
   own text says to skip the catalog when there is no API.
 - **All of Level 3** (OAuth, A2A card, Skills Index, MCP card, WebMCP, DNS-AID)
   and **all of Commerce** — for sites that expose an agent or sell something.
-- **Cloudflare's "Markdown for Agents"** — Pro-only, and made redundant by the
-  twins above.
+- **Cloudflare's "Markdown for Agents"** — Pro-only. Note that the twins do
+  **not** make the "Markdown Negotiation" check pass: after publishing all five,
+  a rescan still reports *"Site does not support Markdown for Agents"*. That
+  check tests Cloudflare's own feature, not whether Markdown is actually
+  available at a URL. Passing it would need either Pro, or a Worker doing real
+  `Accept: text/markdown` negotiation. The twins deliver the underlying benefit
+  regardless — ~80% smaller payloads that agents can fetch today — so this is
+  one checkbox worth leaving red.
 
 ## Verifying
 
