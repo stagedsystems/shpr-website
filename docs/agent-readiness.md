@@ -98,15 +98,18 @@ it is the convention real agents follow.
 **These rules and a deploy have to land together.** The twins are duplicate
 content from the moment they are public until the `noindex` rule exists.
 
-**Rules 4 and 5 — Markdown content negotiation** (URL Rewrite Rules):
+**Rules 4-8 — Markdown content negotiation** (URL Rewrite Rules). One per page,
+all the same shape:
 
-    Rule 4:  (http.request.uri.path eq "/"
-              and any(http.request.headers["accept"][*] contains "text/markdown"))
-             -> rewrite path to /index.md
+    (http.request.uri.path eq "<PATH>"
+     and any(http.request.headers["accept"][*] contains "text/markdown"))
+      -> rewrite path to <TWIN>
 
-    Rule 5:  (http.request.uri.path eq "/deals.html"
-              and any(http.request.headers["accept"][*] contains "text/markdown"))
-             -> rewrite path to /deals.md
+    /                                -> /index.md
+    /deals.html                      -> /deals.md
+    /about.html                      -> /about.md
+    /join.html                       -> /join.md
+    /birmingham-grocery-deals.html   -> /birmingham-grocery-deals.md
 
 **This is what makes Cloudflare's "Markdown Negotiation" check pass**, and the
 panel's advice is misleading about it. That check does NOT test a Cloudflare
@@ -131,11 +134,11 @@ Two consequences worth knowing before touching these:
   get HTML. Only an explicit `text/markdown` in Accept negotiates, which is what
   Claude Code's WebFetch sends.
 
-Adding a page means adding a rule; there is no wildcard version, because that
-would need `regex_replace()`. `/about.html`, `/join.html` and
-`/birmingham-grocery-deals.html` do not negotiate — they are reachable as `.md`
-twins at their own URLs, listed in llms.txt. Add rules if that stops being
-enough; the cap is 10 Transform Rules and 5 are in use.
+**Adding a page means adding a rule.** There is no wildcard version — that would
+need `regex_replace()`, which does not work here (see Rule 2). All five pages are
+covered. The cap is 10 Transform Rules and 8 are in use, so there is room for two
+more pages before this approach needs rethinking; past that, the answer is a
+Worker rather than a sixth near-identical rule.
 
 
 ## What is generated, and from where
