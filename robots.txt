@@ -20,14 +20,42 @@
 # category and links to the page carrying the rest.
 
 User-agent: *
+# How this content may be used (contentsignals.org). Hand-written on purpose.
+#
+# Cloudflare's Agent Readiness panel flags a missing Content-Signal and tells
+# you to fix it by enabling their "managed robots.txt". Do not. That toggle
+# exists to declare content off-limits for AI training, and enabling it REPLACES
+# this file -- which is exactly what blocked every AI crawler here until
+# 2026-09-03 (see the note above). The check is satisfied by the line below.
+#
+# search=yes    -- index us and link to us.
+# ai-input=yes  -- quote us in an AI answer, with attribution. This is the whole
+#                  point of llms.txt: we would rather be cited than invisible.
+# ai-train      -- deliberately omitted. Silence is a valid third state: it
+#                  neither grants nor refuses, and leaves the question open.
+#                  Do not add "ai-train=no" without deciding it on purpose --
+#                  it is a different claim, not a safer default.
+Content-Signal: search=yes, ai-input=yes
 # Raw weekly markdown kept for price history. Data, not pages: no HTML, nothing
 # worth landing on. Listed before the Allow so it wins under parsers that take
 # the first matching rule as well as those that take the longest.
 Disallow: /deals/
+# Repo files that GitHub Pages happens to serve. Nothing secret -- they are in a
+# public repo -- but they are working notes, and /future-copy.md in particular
+# is draft marketing copy with placeholder quotes that reads like real site
+# content to anything that fetches it. Now that .md is a content surface here
+# (every page has a twin), these need saying out loud rather than blending in.
+Disallow: /docs/
+Disallow: /future-copy.md
+Disallow: /README.md
 Allow: /
 
 Sitemap: https://magiccitysavers.com/sitemap.xml
 
 # Site summary and this week's prices for language models (llmstxt.org)
 # https://magiccitysavers.com/llms.txt
+# Every page and the full deal list in one fetch:
+# https://magiccitysavers.com/llms-full.txt
 # This week's deals as markdown: https://magiccitysavers.com/deals.md
+# Every other page has a .md twin at the same path: /index.md, /about.md,
+# /join.md, /birmingham-grocery-deals.md

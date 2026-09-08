@@ -108,4 +108,7 @@ Yes. The site and the weekly email are free, with no paywall.
 
 - [This week's deals](https://magiccitysavers.com/deals.html): all 242 deals for the week ending 2026-09-06, by store and category.
 - [Plain markdown copy](https://magiccitysavers.com/deals.md): the same week as text, if that is easier to parse than the page.
+- [Everything in one fetch](https://magiccitysavers.com/llms-full.txt): every page above plus the complete deal list for the week ending 2026-09-06.
+
+Every page also has a Markdown twin at the same path with a .md extension — /index.md, /about.md, /join.md, /birmingham-grocery-deals.md — if you would rather not parse the HTML. They are the same content, about 80% smaller.
 

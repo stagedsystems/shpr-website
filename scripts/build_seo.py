@@ -19,6 +19,7 @@ which GitHub Pages serves as text/plain. Once per-week URLs exist, the Q&A
 answers below should link to them instead of restating the data.
 """
 
+import json
 import re
 import shutil
 import subprocess
@@ -27,6 +28,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import htmlmd
 import render
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -460,6 +462,127 @@ def inject_highlights(week_ending, stores, leaders):
     return list(pending)
 
 
+def faq_entries(week_ending, stores):
+    """The generated Q&A, built once and rendered twice.
+
+    llms.txt prints these as Markdown; build_faq_jsonld() emits the same
+    questions as schema.org FAQPage on deals.html. They are generated from one
+    function for the same reason llms.txt is generated at all -- two copies of
+    a chicken price drift apart within a month, and a page whose visible answer
+    and structured answer disagree is worse than one carrying neither.
+
+    Each entry is {"q", "paras", "link"}. "link" is the "see the full list"
+    pointer: llms.txt wants it, the JSON-LD does not, because the JSON-LD lives
+    on the very page it would be pointing at.
+    """
+    active = [s for s in stores if s["active"]]
+    deals = [d for s in active for d in s["deals"]]
+    window = valid_window(stores)
+
+    grouped = {}
+    for d in deals:
+        g = group_of(d)
+        if g:
+            grouped.setdefault(g, []).append(d)
+
+    produce = [d for d in deals if d["category"] == PRODUCE_CATEGORY]
+
+    entries = []
+
+    def answer(question, items, noun):
+        """Headline price + depth signal + link. See the note in build_llms_txt."""
+        best = cheapest(items, 4)
+        if not best:
+            return
+        top = best[0]
+        approx = (", though that figure is estimated rather than a published "
+                  "per-pound rate") if top["approx"] else ""
+        paras = [f"{top['name']} at {top['store']}, ${top['per_lb']:.2f}/lb"
+                 f"{approx}. That is the lowest per-pound {noun} price we found "
+                 f"for the week ending {week_ending}."]
+        rest = [d for d in best[1:] if d["store"] != top["store"]]
+        if rest:
+            names = sorted({d["store"] for d in rest})
+            joined = (names[0] if len(names) == 1
+                      else " and ".join([", ".join(names[:-1]), names[-1]]))
+            # "at or under", not "under": ceiling is the price of the most
+            # expensive item listed, so with a single other store the strict
+            # form was always false.
+            ceiling = max(d["per_lb"] for d in rest)
+            paras.append(f"{joined} also came in at or under "
+                         f"${ceiling:.2f}/lb on {noun} this week.")
+        entries.append({
+            "q": question,
+            "paras": paras,
+            "link": (f"Every {noun} deal this week, with store, brand and pack "
+                     f"size: {DEALS_PAGE}"),
+        })
+
+    for key, label in GROUPS:
+        answer(f"What is the best deal on {label} in Birmingham this week?",
+               grouped.get(key, []), label)
+
+    answer("What fruit and vegetables are on sale in Birmingham this week?",
+           produce, "produce")
+
+    leaders = [(label, cheapest(grouped.get(key, []), 1))
+               for key, label in GROUPS]
+    leaders.append(("produce", cheapest(produce, 1)))
+    rows = "\n".join(f"- {label.capitalize()}: {best[0]['store']}, "
+                     f"${best[0]['per_lb']:.2f}/lb"
+                     for label, best in leaders if best)
+    counts = sorted(((len([x for x in st["deals"] if x["featured"]]), st["name"])
+                     for st in active), reverse=True)
+    entries.append({
+        "q": "Which Birmingham grocery store has the best deals this week?",
+        "paras": [
+            "It depends on the item \u2014 no single store wins every week, which "
+            "is the reason this site exists. Category leaders for the week "
+            f"ending {week_ending}:",
+            rows,
+        ],
+        "link": ("Standout deals by store this week: "
+                 + ", ".join(f"{name} {n}" for n, name in counts) + ". "
+                 f"Side-by-side comparison: {DEALS_PAGE}"),
+    })
+
+    entries.append({
+        "q": "What is Magic City Savers?",
+        "paras": ["A free weekly email and website that collects the best "
+                  "grocery deals from Birmingham-area stores into one list. "
+                  "Every week we read the published ads from each store, "
+                  "normalize the prices to a comparable unit where possible, "
+                  "and flag the genuine standouts. Subscribers get the roundup, "
+                  "simple meal ideas built around what is on sale, and one deal "
+                  "not posted anywhere else."],
+        "link": None,
+    })
+    entries.append({
+        "q": "Which stores does Magic City Savers cover?",
+        "paras": ["Publix, Piggly Wiggly, ALDI, Walmart, Winn-Dixie, Target and "
+                  "Dollar General in the Birmingham, Alabama area. Not every "
+                  "store publishes an ad every week; the ones with no ad in a "
+                  "given week are named explicitly rather than quietly dropped."],
+        "link": None,
+    })
+    entries.append({
+        "q": "How often are the prices updated?",
+        "paras": ["Weekly. Most Birmingham store ads run Wednesday through "
+                  "Tuesday. The prices quoted here are for the week ending "
+                  f"{week_ending}"
+                  + (f" and are valid {window}." if window else ".")
+                  + " Prices from a previous week should not be treated as "
+                  "current."],
+        "link": None,
+    })
+    entries.append({
+        "q": "Is it free?",
+        "paras": ["Yes. The site and the weekly email are free, with no paywall."],
+        "link": None,
+    })
+    return entries
+
+
 def build_llms_txt(week_ending, stores):
     active = [s for s in stores if s["active"]]
     missing = [s["name"] for s in stores if not s["active"]]
@@ -505,99 +628,15 @@ def build_llms_txt(week_ending, stores):
         f"{DEALS_PAGE} — machine-readable copy at {DEALS_DATA}.")
     add("")
 
-    grouped = {}
-    for d in deals:
-        g = group_of(d)
-        if g:
-            grouped.setdefault(g, []).append(d)
-
-    produce = [d for d in deals if d["category"] == PRODUCE_CATEGORY]
-
-    def answer(question, items, noun):
-        """Headline price + depth signal + link. See the note above."""
-        best = cheapest(items, 4)
-        if not best:
-            return
-        top = best[0]
-        approx = (", though that figure is estimated rather than a published "
-                  "per-pound rate") if top["approx"] else ""
-        add(f"### {question}")
+    for e in faq_entries(week_ending, stores):
+        add(f"### {e['q']}")
         add("")
-        add(f"{top['name']} at {top['store']}, ${top['per_lb']:.2f}/lb{approx}. "
-            f"That is the lowest per-pound {noun} price we found for the week "
-            f"ending {week_ending}.")
-        rest = [d for d in best[1:] if d["store"] != top["store"]]
-        if rest:
-            names = sorted({d["store"] for d in rest})
-            joined = (names[0] if len(names) == 1
-                      else " and ".join([", ".join(names[:-1]), names[-1]]))
-            # "at or under", not "under": ceiling is the price of the most
-            # expensive item listed, so with a single other store the strict
-            # form was always false.
-            ceiling = max(d["per_lb"] for d in rest)
+        for para in e["paras"]:
+            add(para)
             add("")
-            add(f"{joined} also came in at or under "
-                f"${ceiling:.2f}/lb on {noun} this week.")
-        add("")
-        add(f"Every {noun} deal this week, with store, brand and pack size: "
-            f"{DEALS_PAGE}")
-        add("")
-
-    for key, label in GROUPS:
-        answer(f"What is the best deal on {label} in Birmingham this week?",
-               grouped.get(key, []), label)
-
-    answer("What fruit and vegetables are on sale in Birmingham this week?",
-           produce, "produce")
-
-    add("### Which Birmingham grocery store has the best deals this week?")
-    add("")
-    add("It depends on the item — no single store wins every week, which is "
-        "the reason this site exists. Category leaders for the week ending "
-        f"{week_ending}:")
-    add("")
-    leaders = [(label, cheapest(grouped.get(key, []), 1))
-               for key, label in GROUPS]
-    leaders.append(("produce", cheapest(produce, 1)))
-    for label, best in leaders:
-        if best:
-            add(f"- {label.capitalize()}: {best[0]['store']}, "
-                f"${best[0]['per_lb']:.2f}/lb")
-    add("")
-    counts = sorted(((len([x for x in st["deals"] if x["featured"]]), st["name"])
-                     for st in active), reverse=True)
-    add("Standout deals by store this week: "
-        + ", ".join(f"{name} {n}" for n, name in counts) + ". "
-        f"Side-by-side comparison: {DEALS_PAGE}")
-    add("")
-
-    add("### What is Magic City Savers?")
-    add("")
-    add("A free weekly email and website that collects the best grocery deals "
-        "from Birmingham-area stores into one list. Every week we read the "
-        "published ads from each store, normalize the prices to a comparable "
-        "unit where possible, and flag the genuine standouts. Subscribers get "
-        "the roundup, simple meal ideas built around what is on sale, and one "
-        "deal not posted anywhere else.")
-    add("")
-    add("### Which stores does Magic City Savers cover?")
-    add("")
-    add("Publix, Piggly Wiggly, ALDI, Walmart, Winn-Dixie, Target and Dollar "
-        "General in the Birmingham, Alabama area. Not every store publishes an "
-        "ad every week; the ones with no ad in a given week are named "
-        "explicitly rather than quietly dropped.")
-    add("")
-    add("### How often are the prices updated?")
-    add("")
-    add("Weekly. Most Birmingham store ads run Wednesday through Tuesday. The "
-        f"prices quoted here are for the week ending {week_ending}"
-        + (f" and are valid {window}." if window else ".")
-        + " Prices from a previous week should not be treated as current.")
-    add("")
-    add("### Is it free?")
-    add("")
-    add("Yes. The site and the weekly email are free, with no paywall.")
-    add("")
+        if e["link"]:
+            add(e["link"])
+            add("")
 
     add("## Pages")
     add("")
@@ -618,8 +657,205 @@ def build_llms_txt(week_ending, stores):
         f"the week ending {week_ending}, by store and category.")
     add(f"- [Plain markdown copy]({SITE}/deals.md): the same week as text, if "
         "that is easier to parse than the page.")
+    add(f"- [Everything in one fetch]({SITE}/llms-full.txt): every page above "
+        f"plus the complete deal list for the week ending {week_ending}.")
+    add("")
+    add("Every page also has a Markdown twin at the same path with a .md "
+        "extension — /index.md, /about.md, /join.md, "
+        "/birmingham-grocery-deals.md — if you would rather not parse the "
+        "HTML. They are the same content, about 80% smaller.")
     add("")
 
+    return "\n".join(L) + "\n"
+
+
+def head_region(name, body):
+    """A generated block inside <head>, delimited so reruns replace it."""
+    return (f"  <!-- BEGIN {name}: generated by scripts/build_seo.py -->\n"
+            f"{body}\n"
+            f"  <!-- END {name} -->")
+
+
+def replace_head_region(src, name, body, page):
+    """Swap the named region into <head>, or insert it before </head>."""
+    block = head_region(name, body)
+    pattern = re.compile(
+        rf"  <!-- BEGIN {name}: generated by scripts/build_seo\.py -->.*?"
+        rf"  <!-- END {name} -->", re.S)
+    if pattern.search(src):
+        return pattern.sub(lambda _: block, src, count=1)
+    if "</head>" not in src:
+        raise SystemExit(f"{page}: no </head> to inject {name} into")
+    return src.replace("</head>", f"{block}\n</head>", 1)
+
+
+def page_meta(src, page):
+    """The page's own <title> and description, reused rather than restated.
+
+    Retyping either into an og: tag creates a second copy that drifts from the
+    first. Everything below is derived from what the page already says.
+    """
+    title = re.search(r"<title>(.*?)</title>", src, re.S)
+    desc = re.search(r'<meta name="description" content="([^"]*)"', src)
+    if not title:
+        raise SystemExit(f"{page}: no <title> to build social tags from")
+    if not desc:
+        raise SystemExit(f"{page}: no meta description to build social tags from")
+    return " ".join(title.group(1).split()), desc.group(1)
+
+
+def build_jsonld(page, week_ending, stores):
+    """schema.org for one page, or None if the page warrants none.
+
+    Deliberately NOT used: Product and Offer. Those describe something the
+    publisher sells, and we sell nothing -- these are other companies' shelf
+    prices, transcribed. Marking them up as our offers would be false structured
+    data, and the rich result it fishes for is the kind that earns a manual
+    action. Organization, WebSite and FAQPage are all true as written.
+    """
+    org = {
+        "@type": "Organization",
+        "@id": f"{SITE}/#organization",
+        "name": "Magic City Savers",
+        "url": f"{SITE}/",
+        "logo": f"{SITE}/mcc_full_logo.png",
+        "description": ("Free weekly roundup of the best grocery deals across "
+                        "Birmingham, Alabama stores."),
+        "areaServed": {
+            "@type": "City",
+            "name": "Birmingham",
+            "addressRegion": "AL",
+            "addressCountry": "US",
+        },
+        "sameAs": ["https://instagram.com/magiccitysavers"],
+    }
+    website = {
+        "@type": "WebSite",
+        "@id": f"{SITE}/#website",
+        "url": f"{SITE}/",
+        "name": "Magic City Savers",
+        "inLanguage": "en-US",
+        "publisher": {"@id": f"{SITE}/#organization"},
+    }
+
+    if page == "index.html":
+        graph = [org, website]
+    elif page == "deals.html":
+        # The page really does answer these questions -- the "cheapest per
+        # pound" block at the top is the same data these answers quote.
+        graph = [{
+            "@type": "FAQPage",
+            "@id": f"{DEALS_PAGE}#faq",
+            "isPartOf": {"@id": f"{SITE}/#website"},
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": e["q"],
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "\n\n".join(e["paras"]),
+                    },
+                }
+                for e in faq_entries(week_ending, stores)
+            ],
+        }]
+    else:
+        return None
+
+    doc = {"@context": "https://schema.org", "@graph": graph}
+    body = json.dumps(doc, indent=2, ensure_ascii=False)
+    body = "\n".join("    " + line for line in body.splitlines())
+    return ('  <script type="application/ld+json">\n'
+            + body + "\n  </script>")
+
+
+def inject_head_tags(week_ending, stores):
+    """Canonical, Open Graph, Twitter and JSON-LD on every page.
+
+    None of this existed: no page declared a canonical, and a link to the site
+    shared anywhere rendered as a bare URL with no title, description or image.
+
+    og:image is the logo, so the card type is summary rather than
+    summary_large_image -- a 1:1 logo stretched into a 1.91:1 banner is the
+    broken-looking result, and claiming the large card without art sized for it
+    is how you get it.
+    """
+    written = []
+    pending = {}
+    for page, _, _, _ in PAGES:
+        path = ROOT / page
+        src = path.read_text(encoding="utf-8")
+        title, desc = page_meta(src, page)
+        url = f"{SITE}/" if page == "index.html" else f"{SITE}/{page}"
+
+        lines = [
+            f'  <link rel="canonical" href="{url}">',
+            f'  <meta property="og:type" content="website">',
+            f'  <meta property="og:site_name" content="Magic City Savers">',
+            f'  <meta property="og:title" content="{render.esc(title)}">',
+            f'  <meta property="og:description" content="{render.esc(desc)}">',
+            f'  <meta property="og:url" content="{url}">',
+            f'  <meta property="og:image" content="{SITE}/mcc_full_logo.png">',
+            f'  <meta property="og:locale" content="en_US">',
+            f'  <meta name="twitter:card" content="summary">',
+            f'  <meta name="twitter:title" content="{render.esc(title)}">',
+            f'  <meta name="twitter:description" content="{render.esc(desc)}">',
+            f'  <meta name="twitter:image" content="{SITE}/mcc_full_logo.png">',
+        ]
+        jsonld = build_jsonld(page, week_ending, stores)
+        if jsonld:
+            lines.append(jsonld)
+
+        # Validate every page before writing any, for the reason spelled out in
+        # inject_highlights: a half-applied run is worse than a failed one.
+        pending[page] = replace_head_region(src, "headtags", "\n".join(lines), page)
+        written.append(page)
+
+    for page, out in pending.items():
+        (ROOT / page).write_text(out, encoding="utf-8")
+    return written
+
+
+def build_markdown_twins():
+    """A .md alongside every HTML page, for agents that would rather not parse
+    a layout.
+
+    deals.html is absent on purpose: deals.md already IS its twin, generated
+    upstream from the real data rather than scraped back out of the rendered
+    page.
+
+    These carry no <link rel="canonical"> of their own -- Markdown has nowhere
+    to put one. The canonical and the noindex ride on response headers set by a
+    Cloudflare Transform Rule; see docs/agent-readiness.md. Without that rule
+    these are duplicate content, so they are also kept out of sitemap.xml.
+    """
+    out = []
+    for page, _, _, _ in PAGES:
+        if page == "deals.html":
+            continue
+        src = (ROOT / page).read_text(encoding="utf-8")
+        url = f"{SITE}/" if page == "index.html" else f"{SITE}/{page}"
+        body, lost = htmlmd.to_markdown(src, url)
+        name = "index.md" if page == "index.html" else page[:-5] + ".md"
+        (ROOT / name).write_text(body, encoding="utf-8")
+        out.append((name, lost))
+    return out
+
+
+def build_llms_full_txt(week_ending, twins):
+    """Every page plus this week's prices, in one fetch (llmstxt.org)."""
+    L = [f"# Magic City Savers — full text",
+         "",
+         f"Everything on {SITE} as one document: all five pages, then the "
+         f"complete deal list for the week ending {week_ending}. Generated by "
+         "scripts/build_seo.py; do not edit by hand.",
+         ""]
+    for name, _ in twins:
+        url = f"{SITE}/" if name == "index.md" else f"{SITE}/{name[:-3]}.html"
+        L += [f"---", "", f"Source: {url}", "",
+              (ROOT / name).read_text(encoding="utf-8").rstrip(), ""]
+    L += ["---", "", f"Source: {DEALS_PAGE}", "",
+          (ROOT / "deals.md").read_text(encoding="utf-8").rstrip(), ""]
     return "\n".join(L) + "\n"
 
 
@@ -662,15 +898,31 @@ def main():
 
     inject_deals_html(week_ending, stores, leaders)
     inject_highlights(week_ending, stores, leaders)
+    # After the content injections, not before: the head tags read each page's
+    # title and description, and the twins are made from the finished HTML.
+    inject_head_tags(week_ending, stores)
+    twins = build_markdown_twins()
+
     (ROOT / "llms.txt").write_text(build_llms_txt(week_ending, stores),
                                    encoding="utf-8")
+    (ROOT / "llms-full.txt").write_text(build_llms_full_txt(week_ending, twins),
+                                        encoding="utf-8")
     (ROOT / "sitemap.xml").write_text(build_sitemap(), encoding="utf-8")
 
     weeks = len(week_dirs())
     print(f"week ending {week_ending}: {len(deals)} deals from {len(active)} "
           f"stores prerendered into deals.html")
     print("refreshed the deal highlights on index.html and join.html")
-    print(f"wrote llms.txt, sitemap.xml; {weeks} weeks of data under deals/")
+    print(f"wrote canonical/OpenGraph/JSON-LD into {len(PAGES)} pages")
+    print(f"wrote {', '.join(n for n, _ in twins)}, llms.txt, llms-full.txt, "
+          f"sitemap.xml; {weeks} weeks of data under deals/")
+
+    # Prose living outside a heading, <p> or <li> never reaches the twins. Say
+    # so on the run that introduces it rather than letting it go missing quietly.
+    for name, lost in twins:
+        if lost:
+            print(f"  note: {name} dropped text outside a heading/p/li: "
+                  + "; ".join(repr(x) for x in lost))
 
 
 if __name__ == "__main__":
