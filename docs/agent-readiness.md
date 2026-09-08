@@ -36,9 +36,16 @@ uncached at the edge.** Today `curl -sI https://magiccitysavers.com/` returns
 Rule that makes HTML cacheable, however, and one representation gets stored and
 served to everyone — which means browsers being handed Markdown.
 
-So: never point a Cache Rule at HTML without removing negotiation first. Agents
-that want Markdown should be sent to `/index.md` and friends, which are real
-files and cannot be confused for anything else.
+So: **never point a Cache Rule at HTML without removing negotiation first.**
+That is the single change that would turn a working setup into browsers being
+served Markdown.
+
+`Vary: Accept` is sent anyway (Rules 1 and 3) because it is correct for every
+other cache in the chain — browsers, corporate proxies, anything downstream that
+does honour it. It is belt-and-braces, not the thing keeping this safe.
+
+Agents that want Markdown can also be sent to `/index.md` and friends, which are
+real files and cannot be confused for anything else.
 
 ## The Cloudflare rules this site depends on
 
@@ -58,37 +65,19 @@ It applies to *every* `.md`, deliberately — the weekly archive under `/deals/`
 and the repo files GitHub Pages incidentally serves are all duplicates or
 working notes, and none of them should be indexed either.
 
-**Rule 2 — canonical, only where an HTML twin actually exists.**
-⚠️ **Not deployed.** The dashboard rejected it on this free zone. Rule 1 already
-removes the duplicate-content risk on its own, so this is polish, not a
-prerequisite — but if you retry it, two things cost time:
+**Rule 2 — canonical on Markdown responses.**
+⚠️ **Not deployed. `regex_replace()` does not work on this free zone.**
 
-- Cloudflare's expression syntax treats `\` as a string escape, so a regex
-  `\.md$` must be written `"\\.md$"`. Writing `"\.md$"` fails with
-  *expected ", xHH or OOO after \\*.
-- With that fixed the form reported no error and still did not save, which
-  points at `regex_replace()` being unavailable on the free plan rather than at
-  the syntax. Confirm that before spending more time on the expression.
+Two separate rules needing it were built cleanly and both failed to save with no
+error shown, while every static-value rule deployed first try. Do not spend time
+debugging the expression syntax; the function itself is the problem. If you
+retry after a plan change, note that Cloudflare treats a backslash as a string
+escape, so the regex must be double-escaped -- the single-escaped form fails
+with *expected ", xHH or OOO after \*.
 
-    Expression:  (http.request.uri.path in {"/index.md" "/about.md" "/join.md"
-                  "/birmingham-grocery-deals.md" "/deals.md"})
-    Set dynamic: Link = concat("<https://magiccitysavers.com",
-                               regex_replace(http.request.uri.path, "\.md$", ".html"),
-                               ">; rel=\"canonical\"")
-
-The explicit path list is the point. Deriving the canonical from the path for
-*all* `.md` looks tidier and emits `/-> /README.html` and
-`/deals/2026-09-06/deals.html` — canonicals pointing at URLs that 404. A
-canonical to a dead page is worse than none. Add a path here when a page gains a
-twin.
-
-The canonical is emitted **only on Markdown responses**. Do not generalise it to
-HTML: the HTML pages carry their own `<link rel="canonical">` (injected by
-`build_seo.py`), and a header derived from the request path would disagree with
-them on any URL rewritten before it is served.
-
-Note `/index.md` canonicalises to `/index.html`, which redirects to `/`. If that
-ever matters, special-case it; it is not worth a rule today.
+This is polish, not a prerequisite: Rule 1's `noindex` already removes the
+duplicate-content risk on its own. Anything needing a per-path value has to be
+one static rule per path instead (see Rules 4 and 5).
 
 **Rule 3 — llms.txt discovery on HTML** (the Mintlify convention). Deployed
 2026-09-08 and verified live on every HTML response.
@@ -108,6 +97,46 @@ it is the convention real agents follow.
 
 **These rules and a deploy have to land together.** The twins are duplicate
 content from the moment they are public until the `noindex` rule exists.
+
+**Rules 4 and 5 — Markdown content negotiation** (URL Rewrite Rules):
+
+    Rule 4:  (http.request.uri.path eq "/"
+              and any(http.request.headers["accept"][*] contains "text/markdown"))
+             -> rewrite path to /index.md
+
+    Rule 5:  (http.request.uri.path eq "/deals.html"
+              and any(http.request.headers["accept"][*] contains "text/markdown"))
+             -> rewrite path to /deals.md
+
+**This is what makes Cloudflare's "Markdown Negotiation" check pass**, and the
+panel's advice is misleading about it. That check does NOT test a Cloudflare
+feature: it requests the page URL with `Accept: text/markdown` and looks at the
+Content-Type it gets back. The "Requires Pro or higher" line in the remediation
+text is static boilerplate shown regardless. bbi passes the same check with a
+hand-built nginx `map $http_accept`, on no paid feature at all.
+
+GitHub Pages cannot vary a response on a request header, so the negotiation has
+to happen at the edge. The visitor's URL never changes; the origin serves the
+`.md`, already as `text/markdown; charset=utf-8`.
+
+Two consequences worth knowing before touching these:
+
+- **The response-header rules see the REWRITTEN path.** A negotiated `GET /`
+  matches `extension eq "md"` and therefore picks up Rule 1's `noindex`. That is
+  correct and intended — `noindex` lands on the Markdown representation only,
+  never on the HTML a search engine is served — but it means Rule 1 and these
+  are coupled. Verified against production: a browser and Googlebot both get
+  `text/html` with no `X-Robots-Tag`.
+- **`Accept: */*` does not match.** curl's default and most naive clients still
+  get HTML. Only an explicit `text/markdown` in Accept negotiates, which is what
+  Claude Code's WebFetch sends.
+
+Adding a page means adding a rule; there is no wildcard version, because that
+would need `regex_replace()`. `/about.html`, `/join.html` and
+`/birmingham-grocery-deals.html` do not negotiate — they are reachable as `.md`
+twins at their own URLs, listed in llms.txt. Add rules if that stops being
+enough; the cap is 10 Transform Rules and 5 are in use.
+
 
 ## What is generated, and from where
 
@@ -148,14 +177,15 @@ the text into a real block element or add its class to `CHROME_CLASSES`.
   own text says to skip the catalog when there is no API.
 - **All of Level 3** (OAuth, A2A card, Skills Index, MCP card, WebMCP, DNS-AID)
   and **all of Commerce** — for sites that expose an agent or sell something.
-- **Cloudflare's "Markdown for Agents"** — Pro-only. Note that the twins do
-  **not** make the "Markdown Negotiation" check pass: after publishing all five,
-  a rescan still reports *"Site does not support Markdown for Agents"*. That
-  check tests Cloudflare's own feature, not whether Markdown is actually
-  available at a URL. Passing it would need either Pro, or a Worker doing real
-  `Accept: text/markdown` negotiation. The twins deliver the underlying benefit
-  regardless — ~80% smaller payloads that agents can fetch today — so this is
-  one checkbox worth leaving red.
+- **Cloudflare's "Markdown for Agents"** — the Pro-only feature. Not needed:
+  Rules 4 and 5 satisfy the same check with a self-built implementation, exactly
+  as bbi does. See the note there — the check tests real content negotiation,
+  not whether you pay for their feature.
+
+## Current score
+
+Quick Wins **5/5**. Level 2 0/3 and Level 3 0/8 by design (no API, no login, no
+agent to expose). Commerce 0/5 — nothing is for sale.
 
 ## Verifying
 
@@ -168,9 +198,18 @@ any Cloudflare rule change:
       | grep -iE 'content-type|link|cf-cache-status'
     curl -s  https://magiccitysavers.com/robots.txt | grep -i content-signal
 
-Expected: `.md` returns `text/markdown` and `noindex, follow` (plus a canonical
-`Link` if Rule 2 ever deploys); HTML returns `text/html`, the two `llms-txt`
-links once Rule 3 is added, and **no** `X-Robots-Tag`.
+Expected: `.md` returns `text/markdown` and `noindex, follow`; HTML returns
+`text/html`, the two `llms-txt` links and **no** `X-Robots-Tag`; both carry
+`Vary: Accept`.
+
+And the negotiation itself, which is the part worth re-checking after any rule
+change — the second command must NOT return `text/markdown`:
+
+    curl -sI -H 'Accept: text/markdown, */*' https://magiccitysavers.com/ | grep -i content-type
+    curl -sI -H 'Accept: text/html'          https://magiccitysavers.com/ | grep -iE 'content-type|x-robots'
+
+A browser or Googlebot receiving `noindex` on `/` would deindex the site. That
+is the one failure mode here worth a deliberate check every time.
 
 ## DNS note
 
