@@ -1,111 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About – Magic City Savers</title>
   <meta name="description" content="Who builds Magic City Savers and why: an independent, free weekly grocery deal roundup for Birmingham, Alabama, based at Innovation Depot.">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #222;
-      background: #fafafa;
-      line-height: 1.6;
-    }
-
-    /* NAV BAR */
-    nav {
-      background: #145a95;
-      padding: 0.75rem 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    nav a.active {
-      text-decoration: underline;
-    }
-
-    nav a:hover {
-      opacity: 0.85;
-    }
-
-    header {
-      background: #1769aa;
-      color: white;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    .content {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1.25rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    .content h2 {
-      font-size: 1.6rem;
-      margin-top: 1.5rem;
-      color: #1769aa;
-    }
-
-    .content p {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-
-    .back-btn {
-      display: inline-block;
-      margin: 2rem auto;
-      text-align: center;
-      padding: 0.75rem 1.5rem;
-      background: #1769aa;
-      color: white;
-      border-radius: 6px;
-      font-size: 1rem;
-      text-decoration: none;
-    }
-
-    .back-btn:hover {
-      opacity: 0.9;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-      }
-
-      header h1 {
-        font-size: 1.6rem;
-      }
-
-      .content h2 {
-        font-size: 1.35rem;
-      }
-
-      .content p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPVHLR5F81"></script>
 <script>
@@ -130,51 +30,99 @@
   <meta name="twitter:image" content="https://magiccitysavers.com/mcc_full_logo.png">
   <!-- END headtags -->
 </head>
-
 <body>
-
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="deals.html">Deals</a>
-    <a href="about.html" class="active">About</a>
-  </nav>
-
-  <header>
-    <h1>About Magic City Savers</h1>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="flex items-center justify-between">
+        <a href="index.html">
+          <img src="mcc_full_logo.png" alt="Magic City Savers" class="logo">
+        </a>
+        <nav>
+          <a href="join.html"
+             class="btn btn-primary">
+            Get Weekly Deals
+          </a>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <main class="content">
-
-    <h2>What We're Building</h2>
-    <p>
-      Magic City Savers is a hyper-local grocery savings club built for Birmingham neighborhoods.
-      Our goal is simple: make it easy for shoppers to compare prices across nearby stores — like Aldi,
-      Publix, Walmart, Piggly Wiggly, and more — so everyone can save money every week.
-    </p>
-
-    <p>
-      We're building tools that scrape and analyze grocery prices across multiple stores, letting you
-      build a shopping list and see which store has the best deals in real time.
-    </p>
-
-    <h2>Why This Matters</h2>
-    <p>
-      Grocery prices have climbed year after year, and shoppers often have no visibility into which
-      store is truly cheapest for their weekly list. Many families in our area are spending far more
-      than they need to — simply because the information is hard to find.
-    </p>
-
-    <p>
-      By gathering price data, listening to local shoppers, and focusing on a few neighborhoods at a
-      time, we aim to create a tool that delivers real savings, week after week.
-    </p>
-
-    <div style="text-align:center; margin-bottom: 2rem;">
-      <a href="index.html" class="back-btn">← Back to Magic City Savers</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container-sm">
+      <h1 class="text-4xl font-bold text-gray-900 mb-6">
+        About Magic City Savers
+      </h1>
+      <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+        An independent local project, free and with no paywall, run from Innovation Depot in Birmingham.
+      </p>
     </div>
+  </section>
 
-  </main>
+  <!-- What We're Building -->
+  <section class="section bg-white">
+    <div class="container max-w-4xl">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">What We're Building</h2>
 
+      <div class="max-w-3xl mx-auto">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Magic City Savers is a hyper-local grocery savings club built for Birmingham neighborhoods.
+          Our goal is simple: make it easy for shoppers to compare prices across nearby stores — like Aldi,
+          Publix, Walmart, Piggly Wiggly, and more — so everyone can save money every week.
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed">
+          We're building tools that scrape and analyze grocery prices across multiple stores, letting you
+          build a shopping list and see which store has the best deals in real time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Matters -->
+  <section class="section">
+    <div class="container max-w-4xl">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Why This Matters</h2>
+
+      <div class="max-w-3xl mx-auto">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Grocery prices have climbed year after year, and shoppers often have no visibility into which
+          store is truly cheapest for their weekly list. Many families in our area are spending far more
+          than they need to — simply because the information is hard to find.
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed">
+          By gathering price data, listening to local shoppers, and focusing on a few neighborhoods at a
+          time, we aim to create a tool that delivers real savings, week after week.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- See This Week -->
+  <section class="section bg-white">
+    <div class="container max-w-4xl">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-lg text-gray-700 leading-relaxed">
+          See what that looks like in practice: <a href="deals.html" class="text-teal font-medium">this week's Birmingham grocery deals</a>, updated every Wednesday.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-sm">
+      <p class="mb-2">Built in Birmingham by a local team experienced in data and analytics</p>
+      <p class="mb-4">Based at Innovation Depot</p>
+      <p>
+        Follow along on Instagram:
+        <a href="https://instagram.com/magiccitysavers" target="_blank" rel="noopener noreferrer">
+          @magiccitysavers
+        </a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -283,6 +283,10 @@ body {
 .shadow-lg { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
 
 .max-w-2xl { max-width: 42rem; }
+/* Referenced by index.html and birmingham-grocery-deals.html since the
+   rebuild but never defined, so those inner columns silently ran the full
+   width of their .max-w-4xl parent. 48rem keeps the 2xl/3xl/4xl steps even. */
+.max-w-3xl { max-width: 48rem; }
 .max-w-4xl { max-width: 56rem; }
 
 .leading-relaxed { line-height: 1.75; }
