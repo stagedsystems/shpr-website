@@ -226,6 +226,13 @@ Do not "fix" them.
 `_domainconnect` was the real exception: it was proxied, which broke GoDaddy's
 DomainConnect discovery (530 Origin DNS Error). Set to DNS-only on 2026-09-08.
 
-`robots.txt` is served `cache-control: max-age=14400`. After changing it, purge
-that URL at the edge or the old copy stays live for four hours — a change can be
-correct at origin and invisible in production.
+**Static assets are served `cache-control: max-age=14400` and Cloudflare caches
+them.** `robots.txt`, `styles.css`, images — all of them. After changing one,
+purge that URL (Caching → Configuration → Custom Purge → URL) or the old copy
+stays live for up to four hours, and the change is correct at origin while being
+invisible in production. Both `robots.txt` and `styles.css` have already needed
+this. HTML is the exception: it comes back `cf-cache-status: DYNAMIC`, so page
+edits go live with the deploy.
+
+Check with `curl -sI <url> | grep -i cf-cache-status`. A `HIT` with a non-zero
+`age` after a deploy means you are looking at the old file, not a broken build.
