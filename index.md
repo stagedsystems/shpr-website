@@ -14,15 +14,15 @@ Early Project - Built With Community Feedback - No Spam
 
 ## Recent Birmingham Grocery Deals
 
-- Aldi: Boneless Skinless Chicken Breast Fillets Family Pack — **$2.19/lb**
-- Aldi: Fresh Ground Beef Chub — **$3.59/lb**
+- Aldi: Perdue Fresh Antibiotic Free Family Pack Chicken Drumsticks — **$0.89/lb**
+- Walmart: 73% Lean / 27% Fat Ground Beef — **$3.99/lb**
 - Walmart: Smithfield Fresh Pork Spareribs — **$1.97/lb**
-- Walmart: Fresh Gala Apples — **$1.08/lb**
-- Walmart: Nobrand Fz 21/25 Ez Peel Shrimp — **$5.54/lb**
-- Walmart: Marketside Mild Italian Sausage — **$2.50/lb**
-- Publix: Empire Whole Young Turkey — **$3.69/lb**
+- Piggly Wiggly: Fresh Premium Bananas — **$0.59/lb**
+- Walmart: Great Value Whole Tilapia — **$3.81/lb**
+- Publix: Roger Wood Lumber Jack Smoked Sausage — **$2.03/lb**
+- Publix: Butterball Ground Turkey — **$3.66/lb**
 
-Week of Sep 2–8, 2026 — [see all 242 deals](https://magiccitysavers.com/deals.html)
+Week of Sep 9–15, 2026 — [see all 324 deals](https://magiccitysavers.com/deals.html)
 
 ## What is Magic City Savers?
 
