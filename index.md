@@ -14,15 +14,15 @@ Early Project - Built With Community Feedback - No Spam
 
 ## Recent Birmingham Grocery Deals
 
-- Publix: Chicken Leg Quarters — **$1.59/lb**
+- Aldi: Boneless Skinless Chicken Breasts — **$1.99/lb**
 - Walmart: 73% Lean / 27% Fat Ground Beef — **$3.99/lb**
-- Walmart: Smithfield Fresh Pork Spareribs — **$1.97/lb**
-- Aldi: New York Gala Apples — **$0.66/lb**
-- Walmart: Great Value Whole Tilapia — **$3.81/lb**
-- Walmart: Marketside Mild Italian Sausage — **$2.50/lb**
+- Publix: Whole Pork Picnic — **$1.99/lb**
+- Piggly Wiggly: Fresh Idaho Russet Potatoes — **$0.57/lb**
+- Walmart: Great Value Frozen Unbreaded Catfish Nuggets — **$3.98/lb**
+- Publix: Eckrich Polska Kielbasa or Smoked Sausage — **$3.43/lb**
 - Walmart: Butterball Ground Turkey 85/15 — **$3.99/lb**
 
-Week of Sep 23–29, 2026 — [see all 319 deals](https://magiccitysavers.com/deals.html)
+Week of Sep 30–Oct 6, 2026 — [see all 281 deals](https://magiccitysavers.com/deals.html)
 
 ## What is Magic City Savers?
 
