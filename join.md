@@ -12,15 +12,15 @@ Early Project - Built With Community Feedback - No Spam
 
 ## Recent Birmingham Grocery Deals
 
-- Aldi: Boneless Skinless Chicken Breasts — **$1.99/lb**
-- Walmart: 73% Lean / 27% Fat Ground Beef — **$3.99/lb**
-- Publix: Whole Pork Picnic — **$1.99/lb**
-- Piggly Wiggly: Fresh Idaho Russet Potatoes — **$0.57/lb**
-- Walmart: Great Value Frozen Unbreaded Catfish Nuggets — **$3.98/lb**
-- Publix: Eckrich Polska Kielbasa or Smoked Sausage — **$3.43/lb**
-- Walmart: Butterball Ground Turkey 85/15 — **$3.99/lb**
+- Aldi: Tyson Fresh Chicken Breasts — **$1.79/lb**
+- Publix: Beef Back Ribs — **$3.99/lb**
+- Publix: Pork Boston Butt Roast — **$2.00/lb**
+- Piggly Wiggly: Russet Potatoes — **$0.44/lb**
+- Walmart: Great Value Whole Tilapia — **$3.81/lb**
+- Aldi: Mild Italian Sausage Links — **$2.48/lb**
+- Publix: Young Turkey Breast — **$2.99/lb**
 
-Week of Sep 30–Oct 6, 2026 — [see all 281 deals](https://magiccitysavers.com/deals.html)
+Week of Oct 7–13, 2026 — [see all 317 deals](https://magiccitysavers.com/deals.html)
 
 Prefer social? [Follow @magiccitysavers on Instagram](https://instagram.com/magiccitysavers)
 
