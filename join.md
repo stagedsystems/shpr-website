@@ -12,15 +12,15 @@ Early Project - Built With Community Feedback - No Spam
 
 ## Recent Birmingham Grocery Deals
 
-- Aldi: Tyson Fresh Chicken Breasts — **$1.79/lb**
-- Publix: Beef Back Ribs — **$3.99/lb**
-- Publix: Pork Boston Butt Roast — **$2.00/lb**
+- Aldi: Fresh Family Pack Chicken Drumsticks — **$1.09/lb**
+- Walmart: 73% Lean / 27% Fat Ground Beef — **$3.99/lb**
+- Aldi: Smithfield Fresh Pork Butt Roast — **$1.99/lb**
 - Piggly Wiggly: Russet Potatoes — **$0.44/lb**
 - Walmart: Great Value Whole Tilapia — **$3.81/lb**
-- Aldi: Mild Italian Sausage Links — **$2.48/lb**
-- Publix: Young Turkey Breast — **$2.99/lb**
+- Piggly Wiggly: Dean's Roll Pork Sausage — **$2.99/lb**
+- Publix: Jennie-O Ground Turkey — **$3.50/lb**
 
-Week of Oct 7–13, 2026 — [see all 317 deals](https://magiccitysavers.com/deals.html)
+Week of Oct 14–20, 2026 — [see all 292 deals](https://magiccitysavers.com/deals.html)
 
 Prefer social? [Follow @magiccitysavers on Instagram](https://instagram.com/magiccitysavers)
 
