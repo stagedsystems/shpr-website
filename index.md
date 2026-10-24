@@ -14,15 +14,15 @@ Early Project - Built With Community Feedback - No Spam
 
 ## Recent Birmingham Grocery Deals
 
-- Aldi: Fresh Family Pack Chicken Drumsticks — **$1.09/lb**
-- Walmart: 73% Lean / 27% Fat Ground Beef — **$3.99/lb**
-- Aldi: Smithfield Fresh Pork Butt Roast — **$1.99/lb**
-- Piggly Wiggly: Russet Potatoes — **$0.44/lb**
+- Aldi: Perdue Fresh Antibiotic Free Family Pack Chicken Drumsticks — **$0.89/lb**
+- Publix: Beef Back Ribs — **$3.99/lb**
+- Walmart: Smithfield Fresh Pork Center Cut Loin Boneless — **$1.94/lb**
+- Piggly Wiggly: Fresh Idaho Potatoes — **$0.44/lb**
 - Walmart: Great Value Whole Tilapia — **$3.81/lb**
-- Piggly Wiggly: Dean's Roll Pork Sausage — **$2.99/lb**
-- Publix: Jennie-O Ground Turkey — **$3.50/lb**
+- Publix: Butterball Turkey Bacon — **$2.91/lb**
+- Walmart: Butterball Ground Turkey 85/15% Tray — **$3.99/lb**
 
-Week of Oct 14–20, 2026 — [see all 292 deals](https://magiccitysavers.com/deals.html)
+Week of Oct 21–27, 2026 — [see all 342 deals](https://magiccitysavers.com/deals.html)
 
 ## What is Magic City Savers?
 
