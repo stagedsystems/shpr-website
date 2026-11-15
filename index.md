@@ -14,15 +14,15 @@ Early Project - Built With Community Feedback - No Spam
 
 ## Recent Birmingham Grocery Deals
 
-- Aldi: Fresh Family Pack Chicken Drumsticks — **$1.09/lb**
+- Aldi: Boneless Skinless Chicken Breasts Family Pack — **$1.99/lb**
 - Walmart: 73% Lean / 27% Fat Ground Beef — **$3.89/lb**
 - Walmart: Smithfield — **$1.84/lb**
-- Piggly Wiggly: Russet Potatoes — **$0.44/lb**
+- Walmart: Fresh Banana — **$0.33/lb**
 - Walmart: Great Value Frozen Unbreaded Catfish Nuggets — **$3.99/lb**
-- Publix: Roger Wood Lumber Jack Smoked Sausage — **$2.66/lb**
-- Aldi: Farmer's Choice Young Turkey — **$0.99/lb**
+- Aldi: Appleton Farms Premium Pork Sausage — **$3.09/lb**
+- Publix: Whole Young Turkey — **$0.59/lb**
 
-Week of Nov 4–10, 2026 — [see all 301 deals](https://magiccitysavers.com/deals.html)
+Week of Nov 11–17, 2026 — [see all 344 deals](https://magiccitysavers.com/deals.html)
 
 ## What is Magic City Savers?
 

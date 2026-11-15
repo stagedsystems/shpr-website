@@ -273,6 +273,11 @@ def extract_per_lb(price):
 
 def group_of(deal):
     """Classify an item. See FORMS/SPECIES/CUTS above for why it is three passes."""
+    # Produce is never a protein, whatever its name says: "Cape Cod Select
+    # Cranberries" matched "cod" and was published as the cheapest seafood for
+    # week ending 2026-11-15. Produce gets its own leader in category_leaders.
+    if deal.get("category") == PRODUCE_CATEGORY:
+        return None
     name = deal["name"].lower()
     for table in (FORMS, SPECIES, CUTS):
         for key, keywords in table:
