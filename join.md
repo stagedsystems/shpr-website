@@ -15,12 +15,12 @@ Early Project - Built With Community Feedback - No Spam
 - Aldi: Boneless Skinless Chicken Breasts Family Pack — **$1.99/lb**
 - Walmart: 73% Lean / 27% Fat Ground Beef — **$3.89/lb**
 - Walmart: Smithfield — **$1.84/lb**
-- Walmart: Fresh Banana — **$0.33/lb**
-- Walmart: Great Value Frozen Unbreaded Catfish Nuggets — **$3.99/lb**
+- Aldi: Russet Potatoes — **$0.35/lb**
+- Publix: Buena Ventura Salted Pollock Fillets — **$5.99/lb**
 - Aldi: Appleton Farms Premium Pork Sausage — **$3.09/lb**
 - Publix: Whole Young Turkey — **$0.59/lb**
 
-Week of Nov 11–17, 2026 — [see all 344 deals](https://magiccitysavers.com/deals.html)
+Week of Nov 18–26, 2026 — [see all 381 deals](https://magiccitysavers.com/deals.html)
 
 Prefer social? [Follow @magiccitysavers on Instagram](https://instagram.com/magiccitysavers)
 
