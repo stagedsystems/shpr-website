@@ -14,15 +14,15 @@ Early Project - Built With Community Feedback - No Spam
 
 ## Recent Birmingham Grocery Deals
 
-- Aldi: Boneless Skinless Chicken Breasts Family Pack — **$1.99/lb**
+- Piggly Wiggly: Chicken Quarters (in-store shelf price) — **$1.99/lb**
 - Walmart: 73% Lean / 27% Fat Ground Beef — **$3.89/lb**
-- Walmart: Smithfield — **$1.84/lb**
+- Target: Good & Gather Hickory Smoked Spiral-Sliced Bone-In Uncured Ham - 7.5-10.5lbs (shelf price) — **$1.49/lb**
 - Aldi: Russet Potatoes — **$0.35/lb**
 - Publix: Buena Ventura Salted Pollock Fillets — **$5.99/lb**
 - Aldi: Appleton Farms Premium Pork Sausage — **$3.09/lb**
 - Publix: Whole Young Turkey — **$0.59/lb**
 
-Week of Nov 18–26, 2026 — [see all 381 deals](https://magiccitysavers.com/deals.html)
+Week of Nov 18–26, 2026 — [see all 1036 deals](https://magiccitysavers.com/deals.html)
 
 ## What is Magic City Savers?
 

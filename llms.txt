@@ -3,20 +3,20 @@
 > Free weekly roundup of the best grocery deals across Birmingham, Alabama stores. We read every store's weekly ad, compare prices per pound and per unit, and publish the standouts in one place so shoppers do not have to check six ads.
 
 Current week: week ending 2026-11-22, sale prices valid Nov 18–26, 2026.
-Stores covered this week: Piggly Wiggly, Publix, Aldi, Walmart.
-No ad published this week: Winn-Dixie, Target, Dollar General.
+Stores covered this week: Piggly Wiggly, Publix, Aldi, Target, Walmart.
+No ad published this week: Winn-Dixie, Dollar General.
 
 Magic City Savers is an independent local project based at Innovation Depot in Birmingham. It is free, has no paywall, and is not affiliated with any grocery chain. Coverage centers on Birmingham neighborhoods including Avondale, Crestwood, Forest Park, Homewood, and nearby areas. Prices are transcribed from each store's published weekly ad and change every Wednesday.
 
 ## Common questions
 
-Every answer below is for the week ending 2026-11-22. The full list of all 381 deals, every store and every cut, is at https://magiccitysavers.com/deals.html — machine-readable copy at https://magiccitysavers.com/deals.md.
+Every answer below is for the week ending 2026-11-22. The full list of all 1036 deals, every store and every cut, is at https://magiccitysavers.com/deals.html — machine-readable copy at https://magiccitysavers.com/deals.md.
 
 ### What is the best deal on chicken in Birmingham this week?
 
-Boneless Skinless Chicken Breasts Family Pack, About 4.2 lb / package at Aldi, $1.99/lb. That is the lowest per-pound chicken price we found for the week ending 2026-11-22.
+Chicken Quarters (in-store shelf price) at Piggly Wiggly, $1.99/lb. That is the lowest per-pound chicken price we found for the week ending 2026-11-22.
 
-Walmart also came in at or under $2.50/lb on chicken this week.
+Aldi and Walmart also came in at or under $2.50/lb on chicken this week.
 
 Every chicken deal this week, with store, brand and pack size: https://magiccitysavers.com/deals.html
 
@@ -28,9 +28,9 @@ Every beef deal this week, with store, brand and pack size: https://magiccitysav
 
 ### What is the best deal on pork in Birmingham this week?
 
-Smithfield, Fresh, Pork Shoulder Butt Roast, 5.5-11.5lbs at Walmart, $1.84/lb. That is the lowest per-pound pork price we found for the week ending 2026-11-22.
+Good & Gather Hickory Smoked Spiral-Sliced Bone-In Uncured Ham - 7.5-10.5lbs (shelf price) at Target, $1.49/lb. That is the lowest per-pound pork price we found for the week ending 2026-11-22.
 
-Piggly Wiggly also came in at or under $1.99/lb on pork this week.
+Walmart also came in at or under $1.94/lb on pork this week.
 
 Every pork deal this week, with store, brand and pack size: https://magiccitysavers.com/deals.html
 
@@ -54,8 +54,6 @@ Every bacon and sausage deal this week, with store, brand and pack size: https:/
 
 Publix Whole Young Turkey, 10 to 24-lb, USDA Grade A, Frozen, limit 2 at Publix, $0.59/lb. That is the lowest per-pound turkey price we found for the week ending 2026-11-22.
 
-Aldi also came in at or under $1.27/lb on turkey this week.
-
 Every turkey deal this week, with store, brand and pack size: https://magiccitysavers.com/deals.html
 
 ### What fruit and vegetables are on sale in Birmingham this week?
@@ -70,15 +68,15 @@ Every produce deal this week, with store, brand and pack size: https://magiccity
 
 It depends on the item — no single store wins every week, which is the reason this site exists. Category leaders for the week ending 2026-11-22:
 
-- Chicken: Aldi, $1.99/lb
+- Chicken: Piggly Wiggly, $1.99/lb
 - Beef: Walmart, $3.89/lb
-- Pork: Walmart, $1.84/lb
+- Pork: Target, $1.49/lb
 - Seafood and fish: Publix, $5.99/lb
 - Bacon and sausage: Aldi, $3.09/lb
 - Turkey: Publix, $0.59/lb
 - Produce: Aldi, $0.35/lb
 
-Standout deals by store this week: Publix 16, Walmart 14, Aldi 14, Piggly Wiggly 13. Side-by-side comparison: https://magiccitysavers.com/deals.html
+Standout deals by store this week: Publix 16, Walmart 14, Aldi 14, Piggly Wiggly 13, Target 0. Side-by-side comparison: https://magiccitysavers.com/deals.html
 
 ### What is Magic City Savers?
 
@@ -106,7 +104,7 @@ Yes. The site and the weekly email are free, with no paywall.
 
 ## Full data
 
-- [This week's deals](https://magiccitysavers.com/deals.html): all 381 deals for the week ending 2026-11-22, by store and category.
+- [This week's deals](https://magiccitysavers.com/deals.html): all 1036 deals for the week ending 2026-11-22, by store and category.
 - [Plain markdown copy](https://magiccitysavers.com/deals.md): the same week as text, if that is easier to parse than the page.
 - [Everything in one fetch](https://magiccitysavers.com/llms-full.txt): every page above plus the complete deal list for the week ending 2026-11-22.
 
