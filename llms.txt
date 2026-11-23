@@ -3,14 +3,14 @@
 > Free weekly roundup of the best grocery deals across Birmingham, Alabama stores. We read every store's weekly ad, compare prices per pound and per unit, and publish the standouts in one place so shoppers do not have to check six ads.
 
 Current week: week ending 2026-11-22, sale prices valid Nov 18–26, 2026.
-Stores covered this week: Piggly Wiggly, Publix, Aldi, Target, Walmart.
-No ad published this week: Winn-Dixie, Dollar General.
+Stores covered this week: Piggly Wiggly, Publix, Aldi, Target, Walmart, Dollar General, Trader Joe's.
+No ad published this week: Winn-Dixie.
 
 Magic City Savers is an independent local project based at Innovation Depot in Birmingham. It is free, has no paywall, and is not affiliated with any grocery chain. Coverage centers on Birmingham neighborhoods including Avondale, Crestwood, Forest Park, Homewood, and nearby areas. Prices are transcribed from each store's published weekly ad and change every Wednesday.
 
 ## Common questions
 
-Every answer below is for the week ending 2026-11-22. The full list of all 1036 deals, every store and every cut, is at https://magiccitysavers.com/deals.html — machine-readable copy at https://magiccitysavers.com/deals.md.
+Every answer below is for the week ending 2026-11-22. The full list of all 1223 deals, every store and every cut, is at https://magiccitysavers.com/deals.html — machine-readable copy at https://magiccitysavers.com/deals.md.
 
 ### What is the best deal on chicken in Birmingham this week?
 
@@ -76,7 +76,7 @@ It depends on the item — no single store wins every week, which is the reason 
 - Turkey: Publix, $0.59/lb
 - Produce: Aldi, $0.35/lb
 
-Standout deals by store this week: Publix 16, Walmart 14, Aldi 14, Piggly Wiggly 13, Target 0. Side-by-side comparison: https://magiccitysavers.com/deals.html
+Standout deals by store this week: Publix 16, Walmart 14, Aldi 14, Piggly Wiggly 13, Trader Joe's 0, Target 0, Dollar General 0. Side-by-side comparison: https://magiccitysavers.com/deals.html
 
 ### What is Magic City Savers?
 
@@ -104,7 +104,7 @@ Yes. The site and the weekly email are free, with no paywall.
 
 ## Full data
 
-- [This week's deals](https://magiccitysavers.com/deals.html): all 1036 deals for the week ending 2026-11-22, by store and category.
+- [This week's deals](https://magiccitysavers.com/deals.html): all 1223 deals for the week ending 2026-11-22, by store and category.
 - [Plain markdown copy](https://magiccitysavers.com/deals.md): the same week as text, if that is easier to parse than the page.
 - [Everything in one fetch](https://magiccitysavers.com/llms-full.txt): every page above plus the complete deal list for the week ending 2026-11-22.
 

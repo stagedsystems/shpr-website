@@ -20,7 +20,7 @@ Early Project - Built With Community Feedback - No Spam
 - Aldi: Appleton Farms Premium Pork Sausage — **$3.09/lb**
 - Publix: Whole Young Turkey — **$0.59/lb**
 
-Week of Nov 18–26, 2026 — [see all 1036 deals](https://magiccitysavers.com/deals.html)
+Week of Nov 18–26, 2026 — [see all 1223 deals](https://magiccitysavers.com/deals.html)
 
 Prefer social? [Follow @magiccitysavers on Instagram](https://instagram.com/magiccitysavers)
 
